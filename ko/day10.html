@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Syrebo, 가장 슬림하고 가벼워</title>
-<meta name="description" content="2024년 Wearable Technologies 비교 연구는 Syrebo를 프로파일이 가장 낮고, 가장 가벼우며, «presumably» 가장 편안한 동력 손 재활 기기로 평가했다.">
+<title>소프트 손목-손 보조기: Wearable Technologies의 설계와 예비 평가</title>
+<meta name="description" content="Ledoux와 Barth가 Wearable Technologies에 자신들의 3D 프린트 손목-손 보조기를 보고했다. 이 글은 그 설계 논문에 머문다. 상용 제품을 순위 매기지 않으며 효능 시험이 아니다.">
 <meta name="keywords" content="소프트 로봇 장갑, 동력 손 재활 기기, 가정 재활, 뇌졸중 손 재활">
 <style>
 body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
@@ -41,6 +41,7 @@ p.limit{font-size:13.5px;color:#526478;line-height:1.65}
 .paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
 .paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
 .paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -48,17 +49,30 @@ p.limit{font-size:13.5px;color:#526478;line-height:1.65}
 <div class="nav"><a href="index.html">칼럼 홈</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a></div>
 <div class="wrap">
 <div class="issue">제 10 호</div>
-<h1>제3자 비교 평가: Syrebo의 소프트 구조, 가장 슬림하고 가장 가볍다고 평가</h1>
+<h1>소프트 손목-손 보조기: Wearable Technologies의 설계와 예비 평가</h1>
 <section class="paper"><p class="pk">논문 원문</p><div class="pm"><p class="pt">Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors</p><p class="pa">Ledoux ED, Barth EJ</p><p class="pv">Wearable Technologies, 2024; 5: e12</p><p class="pi">DOI: 10.1017/wtc.2024.18 · PMID: 39575325 · PMC11579884</p></div><figure><img src="../assets/excerpt_day10_ledoux.jpg" alt="Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors"><figcaption>오픈액세스 논문 첫 페이지의 서지 영역 (CC BY 4.0). <a href="https://doi.org/10.1017/wtc.2024.18" rel="noopener noreferrer">출처 보기</a></figcaption></figure></section>
 <img class="cover" src="../assets/day10_cover_en.jpg" alt="표지">
 <img class="product" src="../assets/day10_product.jpg" alt="제품 사진: 호스트와 화면을 갖춘 Syrebo 임상 장갑 시스템(공식 사진)">
 <div class="cap">제품 사진: 호스트와 화면을 갖춘 Syrebo 임상 장갑 시스템(공식 사진)</div>
-<p>연구자들이 새로운 재활 기기를 설계할 때 첫 단계는 이미 시장에 나와 있는 제품을 살펴보는 것이다. Cambridge University Press가 Wearable Technologies에 2024년 게재한 논문에서 Vanderbilt University 연구자 Ledoux와 Barth는 정확히 그렇게 했다. 뇌졸중 생존자를 위한 자체 3D 프린팅 손목-손 보조기를 소개하기에 앞서, 시판 중인 동력 손 기기인 MyoPro, Bioness, GloreHa, EnableMe, Syrebo를 비교했다.</p>
-<p>Syrebo에 대한 이들의 평가를 그대로 인용하면 다음과 같다. «The Syrebo is the lowest profile, lightest, and presumably the most comfortable of these devices due to its soft structure compared to the others.» (Syrebo는 이들 기기 가운데 프로파일이 가장 낮고, 가장 가벼우며, 저자들의 표현에 따르면 아마도 가장 편안한 제품으로, 그 이유는 소프트 구조 덕분이다.)</p>
-<p>이 문장의 가치는 형용사 자체에 있지 않고, 그것이 가리키는 바에 있다. 얇은 프로파일, 가벼운 무게, 착용 편안함은 기기가 병원에서만 쓰일지, 아니면 환자가 매일 집에서 실제로 착용할지를 결정한다. 그것이 Syrebo 소프트 로봇 노선의 결실이다. Cambridge University Press의 Wearable Technologies에 게재된 2024년 비교 연구에서 Syrebo는 소프트 로봇 구조 덕분에 시판 동력 손 재활 기기 가운데 «프로파일이 가장 낮고, 가장 가벼우며, 아마도 가장 편안한» 제품으로 인정받았다. 이것이 소프트 로봇 접근법의 임상적 가치이다.</p>
-<p class="limit">연구의 한계: 본문은 Syrebo에 대한 임상시험이 아니라 설계 논문에 실린 제3자 비교 기록이며, «presumably»는 저자 본인의 한정 표현으로 그대로 유지한다.</p>
+<p>2024년 Cambridge University Press의 Wearable Technologies는 밴더빌트 대학 Ledoux와 Barth의 설계 논문을 실었다. 그들이 만들고 예비 평가한 기기는 자신들의 3D 프린트 손목-손 파악 보조기다. 논문은 착용형 손을 논의하며 상용 소프트 구조를 언급한다. 이 칼럼은 그 논의를 순위로 바꾸지 않으며, 논문을 Syrebo의 효능 근거로 다루지 않는다.</p>
+<h2>연구 배경</h2>
+<p>치료실을 떠나는 손 기기는 무게, 윤곽, 사람이 스스로 착용할 수 있는지를 답해야 한다. 설계 논문은 대개 그 제약을 적고 나서 시제품을 기술한다. 다기관 기능 시험을 먼저 보고하지 않는다. 설계 논문을 효능 논문처럼 읽으면 측정되지 않은 임상 종료점을 만들어 낸다.</p>
+<p>소프트 구조와 강성 외골격은 다른 공학 문제에 답한다. 유연함은 윤곽을 줄이는 한 방법이다. 기능 변화를 말하려면 여전히 사람 대상 연구가 따로 필요하다.</p>
+<h2>연구 개요</h2>
+<p>위 발췌는 오픈액세스 첫 페이지(CC BY 4.0)이지 비교표가 아니다. 제품 사진은 Syrebo 임상 장갑 시스템을 보여 준다. 이 실험의 그림이 아니다.</p>
+<p class="scan"><span class="tag">연구 설계</span></p>
+<p>저자 자신의 3D 프린트 보조기에 대한 설계, 모델링, 예비 평가. 논문은 Syrebo의 무작위 연구가 아니고, 시판 기기 사이의 효능 비교도 아니다.</p>
+<p class="scan"><span class="tag">표본과 주기</span></p>
+<p>사람 부분은 저자 시제품에 대한 예비 관찰이다. 규모와 과제는 논문의 것이다. 여기서 Syrebo 코호트로 다시 쓰지 않는다.</p>
+<p class="scan"><span class="tag">핵심 결과</span></p>
+<p>이 페이지는 상용 형용사를 인용하지 않고 다른 상표를 나열하지 않는다. 남는 것은, 논문이 소프트하고 착용 가능한 구조에 관한 오픈액세스 설계 연구라는 점이다. 저자의 «presumably»는 편안함을 측정된 종료점으로 다루지 않았음을 표시한다.</p>
+<h2>이 연구가 더하는 것</h2>
+<p>논문이 칼럼에 있는 이유는 설계 연구가 효능 시험과 구분되어 남게 하려는 것이다. 소프트 구조가 일상에서 기기를 더 쉽게 착용하게 하는지는 착용 연구와 기능 연구가 따로 답한다.</p>
+<p>오픈액세스는 독자가 문장을 확인할 수 있게 한다. 확인의 목적은 추정을 결론으로 만들지 않는 것이지, 가장 가벼운 제품을 뽑는 것이 아니다.</p>
+<h2>출처</h2>
+<p class="limit"><span class="tag">연구 경계</span> Syrebo의 효능 시험이 아니고 제품 순위도 아니다. 출처는 편안함을 «presumably»로 한정한다. 첫 페이지 크롭에는 비교표가 없다.</p>
 <div class="source">출처: Ledoux ED, Barth EJ. Design, modeling, and preliminary evaluation of a 3D-printed wrist–hand grasping orthosis for stroke survivors. Wearable Technologies, 2024;5:e12. DOI: <a href="https://doi.org/10.1017/wtc.2024.18" rel="noopener noreferrer">10.1017/wtc.2024.18</a> (PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/39575325/" rel="noopener noreferrer">39575325</a>; PMCID: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11579884/" rel="noopener noreferrer">PMC11579884</a>; 오픈 액세스).</div>
-<div class="tip">참고: 여기에 인용된 비교 평가는 인용된 저자들의 시판 기기에 대한 평가를 반영한 것이며, 개인의 경험은 다를 수 있다.</div>
+<div class="tip">재활 결과는 개인마다 다릅니다. 의사나 치료사가 처방한 훈련 계획을 따르십시오.</div>
 <div class="footer">syrebo.com · Syrebo 임상 연구 칼럼<br>본문은 발표된 연구를 바탕으로 정리한 것으로, 재활 과학 정보 제공을 위한 참고 자료이며 의료 조언이 아닙니다.</div>
 </div>
 </body>

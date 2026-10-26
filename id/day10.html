@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Syrebo: paling ramping dan ringan</title>
-<meta name="description" content="Perbandingan 2024 di Wearable Technologies menyebut Syrebo perangkat berprofil terendah, teringan, dan «presumably» ternyaman.">
+<title>Ortesis pergelangan-tangan yang lunak: rancangan dan evaluasi awal di Wearable Technologies</title>
+<meta name="description" content="Ledoux dan Barth melaporkan ortesis pergelangan-tangan cetak 3D milik mereka di Wearable Technologies. Catatan ini tetap pada artikel rancangan itu. Tidak memeringkat produk komersial dan bukan uji khasiat.">
 <meta name="keywords" content="sarung tangan robot lunak, perangkat rehabilitasi tangan bermotor, rehabilitasi di rumah, rehabilitasi tangan pascastroke">
 <style>
 body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
@@ -41,6 +41,7 @@ p.limit{font-size:13.5px;color:#526478;line-height:1.65}
 .paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
 .paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
 .paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -48,17 +49,30 @@ p.limit{font-size:13.5px;color:#526478;line-height:1.65}
 <div class="nav"><a href="index.html">Beranda kolom</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a></div>
 <div class="wrap">
 <div class="issue">Edisi 10</div>
-<h1>Perbandingan independen: struktur lunak Syrebo disebut yang paling ramping dan paling ringan</h1>
+<h1>Ortesis pergelangan-tangan yang lunak: rancangan dan evaluasi awal di Wearable Technologies</h1>
 <section class="paper"><p class="pk">Dari artikel</p><div class="pm"><p class="pt">Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors</p><p class="pa">Ledoux ED, Barth EJ</p><p class="pv">Wearable Technologies, 2024; 5: e12</p><p class="pi">DOI: 10.1017/wtc.2024.18 · PMID: 39575325 · PMC11579884</p></div><figure><img src="../assets/excerpt_day10_ledoux.jpg" alt="Design, modeling, and preliminary evaluation of a 3D-printed wrist-hand grasping orthosis for stroke survivors"><figcaption>Potongan bibliografi halaman pertama akses terbuka (CC BY 4.0). <a href="https://doi.org/10.1017/wtc.2024.18" rel="noopener noreferrer">Lihat sumber</a></figcaption></figure></section>
 <img class="cover" src="../assets/day10_cover_en.jpg" alt="Sampul">
 <img class="product" src="../assets/day10_product.jpg" alt="Foto produk: sistem sarung tangan klinis Syrebo dengan unit utama dan layar (foto resmi)">
 <div class="cap">Foto produk: sistem sarung tangan klinis Syrebo dengan unit utama dan layar (foto resmi)</div>
-<p>Ketika para peneliti merancang perangkat rehabilitasi baru, langkah pertama mereka adalah meninjau apa yang sudah ada di pasar. Dalam makalah 2024 yang diterbitkan oleh Cambridge University Press di Wearable Technologies, para peneliti Universitas Vanderbilt, Ledoux dan Barth, melakukan hal itu: sebelum mempresentasikan ortosis pergelangan tangan-tangan cetak 3D mereka sendiri untuk penyintas stroke, mereka membandingkan perangkat tangan bermotor komersial yang tersedia: MyoPro, Bioness, GloreHa, EnableMe, dan Syrebo.</p>
-<p>Putusan mereka tentang Syrebo, dikutip persis: «The Syrebo is the lowest profile, lightest, and presumably the most comfortable of these devices due to its soft structure compared to the others.» (Syrebo adalah perangkat berprofil terendah, teringan, dan, menurut para penulis, kemungkinan ternyaman di antara perangkat-perangkat ini, berkat strukturnya yang lunak.)</p>
-<p>Nilai kalimat itu bukan terletak pada kata sifatnya sendiri, melainkan pada apa yang ditunjukkannya: profil yang ramping, bobot yang ringan, dan kenyamanan pemakaian menentukan apakah sebuah perangkat hanya digunakan di klinik atau benar-benar dipakai pasien setiap hari di rumah. Itulah hasil dari jalur robotika lunak Syrebo. Dalam studi perbandingan 2024 yang diterbitkan di Wearable Technologies (Cambridge University Press), Syrebo diakui sebagai «perangkat berprofil terendah, teringan, dan kemungkinan ternyaman» di antara perangkat rehabilitasi tangan bermotor komersial, berkat struktur robotik lunaknya — itulah nilai klinis dari pendekatan robotika lunak.</p>
-<p class="limit">Keterbatasan studi: ini adalah catatan perbandingan pihak ketiga dalam makalah desain, bukan uji klinis Syrebo; «presumably» adalah kualifikasi penulis sendiri dan dipertahankan persis.</p>
+<p>Pada 2024 Wearable Technologies, dari Cambridge University Press, menerbitkan artikel rancangan Ledoux dan Barth di Universitas Vanderbilt. Alat yang mereka bangun dan evaluasi secara awal adalah ortesis genggam pergelangan-tangan cetak 3D milik mereka sendiri. Artikel menyebut struktur lunak komersial saat membahas tangan yang dapat dikenakan. Rubrik ini tidak mengubah pembahasan itu menjadi peringkat, dan tidak memperlakukan artikel sebagai bukti khasiat Syrebo.</p>
+<h2>Latar belakang</h2>
+<p>Alat tangan yang meninggalkan ruang terapi harus menjawab berat, profil, dan apakah seseorang dapat memakainya. Artikel rancangan biasanya menyatakan batasan itu lalu menggambarkan prototipe. Mereka tidak lebih dulu melaporkan uji fungsi multisentra. Membaca artikel rancangan sebagai artikel khasiat mengarang luaran klinis yang tidak diukur.</p>
+<p>Struktur lunak dan eksoskeleton kaku menjawab masalah rekayasa yang berbeda. Kelunakan adalah satu cara mengurangi profil. Berbicara tentang perubahan fungsi tetap membutuhkan studi manusia tersendiri.</p>
+<h2>Ikhtisar studi</h2>
+<p>Kutipan di atas adalah halaman pertama akses terbuka (CC BY 4.0), bukan tabel perbandingan. Foto produk menunjukkan sistem sarung tangan klinis Syrebo. Bukan gambar dari percobaan ini.</p>
+<p class="scan"><span class="tag">Desain studi</span></p>
+<p>Rancangan, pemodelan, dan evaluasi awal atas ortesis cetak 3D milik para penulis sendiri. Artikel bukan uji acak Syrebo dan bukan perbandingan khasiat antaralat yang dipasarkan.</p>
+<p class="scan"><span class="tag">Sampel dan jadwal</span></p>
+<p>Bagian manusia adalah tinjauan awal atas prototipe para penulis. Ukuran dan tugasnya adalah milik artikel. Tidak ditulis ulang di sini sebagai kohort Syrebo.</p>
+<p class="scan"><span class="tag">Temuan utama</span></p>
+<p>Halaman ini tidak mengutip kata sifat komersial dan tidak mendaftar merek lain. Yang tersisa adalah bahwa artikel ini studi rancangan akses terbuka tentang struktur yang lunak dan dapat dikenakan. Kata para penulis «presumably» menandai kenyamanan sebagai sesuatu yang tidak mereka perlakukan sebagai luaran yang diukur.</p>
+<h2>Apa yang ditambahkan studi ini</h2>
+<p>Artikel ada di rubrik agar studi rancangan tetap berbeda dari uji khasiat. Apakah struktur lunak membuat alat lebih mudah dipakai dalam kehidupan sehari-hari adalah studi pemakaian dan studi fungsi, secara terpisah.</p>
+<p>Akses terbuka memungkinkan pembaca memeriksa rumusan. Maksud pemeriksaan adalah menjaga anggapan agar tidak menjadi kesimpulan, bukan memilih produk yang paling ringan.</p>
+<h2>Sumber</h2>
+<p class="limit"><span class="tag">Batasan</span> Bukan uji khasiat Syrebo, dan bukan peringkat produk. Sumber memagari kenyamanan dengan «presumably». Potongan halaman pertama tidak memuat tabel perbandingan.</p>
 <div class="source">Sumber: Ledoux ED, Barth EJ. Design, modeling, and preliminary evaluation of a 3D-printed wrist–hand grasping orthosis for stroke survivors. Wearable Technologies, 2024;5:e12. DOI: <a href="https://doi.org/10.1017/wtc.2024.18" rel="noopener noreferrer">10.1017/wtc.2024.18</a> (PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/39575325/" rel="noopener noreferrer">39575325</a>; PMCID: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11579884/" rel="noopener noreferrer">PMC11579884</a>; akses terbuka).</div>
-<div class="tip">Catatan: perbandingan yang dikutip di sini mencerminkan penilaian para penulis yang dikutip terhadap perangkat komersial; pengalaman individu dapat bervariasi.</div>
+<div class="tip">Catatan: hasil rehabilitasi berbeda-beda pada setiap individu. Harap ikuti rencana latihan yang ditentukan oleh dokter atau terapis Anda.</div>
 <div class="footer">syrebo.com · Kolom Riset Klinis Syrebo<br>Konten ini disusun berdasarkan penelitian yang telah diterbitkan, hanya untuk referensi edukasi rehabilitasi, dan bukan merupakan saran medis.</div>
 </div>
 </body>
