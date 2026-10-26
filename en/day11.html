@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Home Rehabilitation, Recognized in Japan: Syrebo</title>
-<meta name="description" content="The Journal of the Robotics Society of Japan (2023) named Syrebo among the few finger robots commercialized for home use.">
+<title>Finger robots intended for home use: a development note in the Journal of the Robotics Society of Japan</title>
+<meta name="description" content="A 2023 article in the Journal of the Robotics Society of Japan discusses home-use finger robots for hemiparesis and names Syrebo among the few commercialized examples. It is not a clinical trial.">
 <meta name="keywords" content="home rehabilitation robot, finger rehabilitation robot, home-use rehabilitation device">
 <style>
 body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
@@ -29,6 +29,19 @@ img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
 .btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
 p.limit{font-size:13.5px;color:#526478;line-height:1.65}
 .source a{color:#0050a0;font-weight:600}
+
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -36,13 +49,28 @@ p.limit{font-size:13.5px;color:#526478;line-height:1.65}
 <div class="nav"><a href="../index.html">Column home</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a></div>
 <div class="wrap">
 <div class="issue">Issue 11</div>
-<h1 class="en">Home Rehabilitation, Recognized in Japan: Syrebo Named Among the Few Commercialized Home-Use Finger Robots</h1>
-<img class="cover" src="../assets/day11_cover_en.jpg" alt="cover">
+<h1 class="en">Finger robots intended for home use: a development note in the Journal of the Robotics Society of Japan</h1>
+<section class="paper"><p class="pk">From the paper</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4)</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">View source</a></p></div></section>
+<img class="cover" src="../assets/day11_cover_en.jpg" alt="Cover">
 <img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma et al., Cureus 2024, Figure 2: Syrebo soft robotic glove and console (CC BY 4.0). From that case report, not a figure in the Japanese review, which does not show the glove.">
 <div class="cap">Sharma et al., Cureus 2024, Figure 2: Syrebo soft robotic glove and console (CC BY 4.0). From that case report, not a figure in the Japanese review, which does not show the glove. <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a></div>
-<p>Home rehabilitation has been talked about for years, but products that actually reach patients&#x27; homes and get used every day remain rare. A 2023 article in the Journal of the Robotics Society of Japan (Vol 41, No 4), on home-use finger rehabilitation robots for hemiplegia and collaboration with medical professionals, made exactly this point: while commercialized cases are still few, products realized for home use do exist — and the article names the Syrebo® hand rehabilitation glove as one of them.</p>
-<p>The Journal of the Robotics Society of Japan (2023) cited the Syrebo® hand rehabilitation glove as one of the few hand rehabilitation robots worldwide successfully commercialized for home use. Home rehabilitation is not just a concept — Syrebo has already done it. What makes that possible is the same route behind the rest of this column: a soft, wearable design that patients can actually use at home, extending rehabilitation from the hospital into daily life.</p>
-<p class="limit">Study limitations: This is a mention in a review article, not a clinical trial of Syrebo; the article itself stresses that such commercialized cases remain few.</p>
+<p>Home hand rehabilitation has been discussed for years. Commercialized examples in the society literature are still few. In 2023 the Journal of the Robotics Society of Japan published an article by Furudate and colleagues on a finger-rehabilitation robot intended for home use after hemiparesis, and on developing it with clinicians. The authors note that commercialized home-use cases remain rare, and they name the Syrebo hand glove as one such case. The article is a development and collaboration note, not an efficacy trial.</p>
+<h2>Background</h2>
+<p>Between the ward and the home sit donning, safety limits, and use when no therapist is in the room. Engineering papers put those constraints inside the work with clinicians. Being named means the authors chose this product as an example. It does not mean the society ran a controlled study.</p>
+<p>“Few have been commercialized” is also a limit. Reading it as “home rehabilitation is already generally available” turns an example into an epidemiologic claim.</p>
+<h2>Study overview</h2>
+<p>The article does not print a glove photograph. The glove-and-console image in this column is Figure 2 of the 2024 Cureus case report by Sharma and colleagues (CC BY 4.0). The caption says so. It is not the original figure of the Japanese society paper.</p>
+<p class="scan"><span class="tag">Study design</span></p>
+<p>A society-journal development article about finger robots for home use and about working with clinicians. There is no randomization and no between-group functional comparison.</p>
+<p class="scan"><span class="tag">Sample and schedule</span></p>
+<p>A clinical sample size does not apply. The article discusses a path to a product, not outcomes in a cohort.</p>
+<p class="scan"><span class="tag">Main findings</span></p>
+<p>The statement, as used here, is that commercialized finger robots aimed at the home are still few, and that Syrebo is one example the authors name. The column keeps that scope. It is not rewritten as efficacy, as a market rank, or as a promise that training at home will be completed.</p>
+<h2>What this study adds</h2>
+<p>The note’s value is that home use is treated as an engineering problem defined with clinicians. A commercialized example shows that one device moved from prototype to product.</p>
+<p>Whether it can be used safely and repeatedly at home still depends on indication, supervision, and separate clinical studies. The society paper does not provide those data.</p>
+<h2>Source</h2>
+<p class="limit"><span class="tag">Limits</span> Not a clinical trial of Syrebo. The source stresses that commercialized examples remain few. The photograph is from a different open-access case report.</p>
 <div class="source">Source: 古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4). (Journal of the Robotics Society of Japan, 2023;41(4).) DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
 <div class="tip">Note: Rehabilitation outcomes vary by individual. Please follow the training plan prescribed by your physician or therapist.</div>
 <div class="footer">syrebo.com · Syrebo Clinical Research Column<br>This content is compiled from published studies for rehabilitation education only and does not constitute medical advice.</div>

@@ -1,0 +1,32 @@
+Literature excerpt images embedded on the clinical-column articles.
+Only CC BY (commercial reuse with attribution) files are stored here.
+The card on every article still shows the original title, authors, and venue.
+
+excerpt_day02_jrm.jpg
+  Paper: Abdelraouf OR, et al. Journal of Rehabilitation Medicine, 2025.
+  DOI: 10.2340/jrm.v57.43482
+  License: CC BY 4.0 (Unpaywall / journal PDF).
+  Crop: first-page header (title, authors, affiliations). No results table.
+
+excerpt_day10_ledoux.jpg
+  Paper: Ledoux ED, Barth EJ. Wearable Technologies, 2024;5:e12.
+  DOI: 10.1017/wtc.2024.18
+  License: CC BY 4.0 (Cambridge Core PDF).
+  Crop: first-page header through keywords. The device-comparison table is not included.
+
+day11_sharma2024_fig2.jpg
+  Paper: Sharma VS, Sharath HV, Sasun AR. Cureus, 2024;16(4):e59314.
+  DOI: 10.7759/cureus.59314
+  License: CC BY 4.0.
+  Use: Figure 2 (glove and console), shown on the Sharma article excerpt.
+  This figure is not a figure from the Japanese society review (issue 11).
+
+Not embedded, and why:
+  01 Sunnetci, Scientific Reports — CC BY-NC-ND 4.0
+  03 Woo, NeuroRehabilitation — closed access
+  04 Abd Elhady, SPORT TK — CC BY-NC-ND 4.0
+  05 Lin, BioMedical Engineering OnLine — CC BY 4.0, publisher PDF blocked by a bot challenge in this environment
+  06 Meng, 湖南中医药大学学报 — abstract only, license not stated (待确认授权)
+  08 Chen, 新医学 — reuse terms not stated (待确认授权)
+  09 Prabhu, IJPRCP — reuse terms not stated (待确认授权)
+  11 Furudate, 日本ロボット学会誌 — J-STAGE file, no CC grant (待确认授权)
