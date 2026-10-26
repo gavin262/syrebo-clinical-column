@@ -13,14 +13,24 @@ Citation links
     NCT -> https://clinicaltrials.gov/study/{nct}
     ChiCTR -> WHO ICTRP record for that registry id
 
-    Issues that have no DOI on the page:
-      06 Meng 2022 — journal abstract (no DOI assigned):
+    Issues that have no working doi.org link:
+      06 Meng 2022 — no DOI on the page. Journal abstract, rechecked 2026-10-26
+         (HTTP 200, correct title and abstract):
          http://hnzyydxxb.hnucm.edu.cn/hnzyydxxb/ch/reader/view_abstract.aspx?file_no=20220307
+      08 Chen 2024 — DOI text 10.3969/j.issn.0253-9802.2024.06.001 is the
+         identifier printed by the journal, but https://doi.org/ returns 404
+         (not in Crossref). The href is the journal article page that opens:
+         https://cjournal.hep.com.cn/0253-9802/CN/1207256030272373518
+         (新医学 2024;55(6):397-402, 陈涛 et al.). The DOI string stays visible.
       09 Prabhu 2025 — journal article page. A DOI sometimes quoted
          (10.54839/ijprcp.v4i2.24.26) does not resolve and is not added.
          https://ijprcp.com/articles/rehabilitation-of-left-sided-hemiparesis-post-mca-infarction-using-faradic-electrical-stimulation-and-robotic-hand-rehabilitation-a-case-report
       11 Furudate 2023 — the page omitted the DOI; it is 10.7210/jrsj.41.331
          (J-STAGE). That DOI is inserted and linked. No search fallback.
+
+    Page chrome uses logo blue #0050a0, with #00356b for nav, headings, and
+    buttons. Flattened cover left panels and poster teal headers are recoloured
+    in place (--chrome). Product photos are not rebuilt or cropped.
 
 Posters
     Non-English posters for issues 01–09 keep their type, drop the issue-number
@@ -45,6 +55,20 @@ BRAND_BLUE = "#0050a0"
 OLD_ACCENT = "#00b4a0"
 OLD_NAV_LINK = "#bfe3de"
 NEW_NAV_LINK = "#d5e4f7"
+# Darker blue from #0050a0 (same hue, used for nav, headings, buttons).
+NAV_BLUE = "#00356b"
+CHROME_COLORS = {
+    "#0e4a5a": NAV_BLUE,
+    "#f4f7f7": "#f4f7fb",
+    "#f0f6f6": "#e8f2fb",
+    "#6e7d82": "#5a6c80",
+    "#5c6b70": "#526478",
+    "#d2dcde": "#d3deec",
+    "#232d32": "#1c2836",
+}
+CHEN_DOI = "10.3969/j.issn.0253-9802.2024.06.001"
+# Journal of New Medicine article page. doi.org 404s for this CNKI-style DOI.
+CHEN_URL = "https://cjournal.hep.com.cn/0253-9802/CN/1207256030272373518"
 
 DOI_11 = "10.7210/jrsj.41.331"
 MENG_URL = (
@@ -150,7 +174,8 @@ def sub_outside_tags(text: str, pattern: str, repl, flags: int = 0) -> str:
 def linkify_plain(text: str) -> str:
     def doi(m: re.Match) -> str:
         core, tail = strip_tail(m.group(2))
-        return link_token(m.group(1), core, f"https://doi.org/{core}") + tail
+        href = CHEN_URL if core == CHEN_DOI else f"https://doi.org/{core}"
+        return link_token(m.group(1), core, href) + tail
 
     def pmid(m: re.Match) -> str:
         return link_token(m.group(1), m.group(2), f"https://pubmed.ncbi.nlm.nih.gov/{m.group(2)}/")
@@ -261,11 +286,13 @@ def process_html(path: Path) -> bool:
         )
 
     html = html.replace(OLD_ACCENT, BRAND_BLUE).replace(OLD_NAV_LINK, NEW_NAV_LINK)
+    for old, new in CHROME_COLORS.items():
+        html = html.replace(old, new)
 
     if "p.limit{" not in html and "</style>" in html:
         html = html.replace(
             "</style>",
-            "p.limit{font-size:13.5px;color:#5c6b70;line-height:1.65}\n"
+            "p.limit{font-size:13.5px;color:#526478;line-height:1.65}\n"
             ".source a{color:#0050a0;font-weight:600}\n"
             "</style>",
             1,
@@ -616,14 +643,127 @@ def poster_paths() -> list[tuple[Path, str]]:
     return found
 
 
+# Flat teal used in cover panels and poster headers, mapped onto logo blue.
+_PANEL = (15, 74, 90)
+_MINT = (0, 179, 158)
+_WHITE = (255, 255, 255)
+_TARGET = (0, 80, 160)  # #0050a0
+_MINT_TARGET = (26, 148, 230)
+# Every cover is 1200px wide and the photo starts at x=660.
+_COVER_SPLIT_X = 659
+
+
+def _recolor_chrome_array(arr):
+    """Map pixels that lie on the teal design ramps onto the logo-blue ramps."""
+    import numpy as np
+
+    src = arr.astype(np.float32)
+    lines = (
+        (_PANEL, _WHITE, _TARGET, _WHITE),
+        (_MINT, _WHITE, _MINT_TARGET, _WHITE),
+        (_PANEL, _MINT, _TARGET, _MINT_TARGET),
+    )
+    best_err = np.full(src.shape[:2], 1e9, dtype=np.float32)
+    best_rgb = src.copy()
+    for a, b, ta, tb in lines:
+        a = np.array(a, dtype=np.float32)
+        b = np.array(b, dtype=np.float32)
+        ta = np.array(ta, dtype=np.float32)
+        tb = np.array(tb, dtype=np.float32)
+        delta = b - a
+        den = float(np.dot(delta, delta))
+        t = ((src - a) * delta).sum(axis=2) / den
+        pred = a + t[..., None] * delta
+        err = np.sqrt(((src - pred) ** 2).sum(axis=2))
+        t_clip = np.clip(t, 0.0, 1.0)
+        mapped = ta + t_clip[..., None] * (tb - ta)
+        use = (err < best_err) & (err <= 26) & (t >= -0.08) & (t <= 1.08)
+        best_err = np.where(use, err, best_err)
+        best_rgb = np.where(use[..., None], mapped, best_rgb)
+    return np.clip(np.rint(best_rgb), 0, 255).astype(np.uint8)
+
+
+def recolor_flattened_chrome(path: Path) -> str:
+    """Recolour cover left panels and poster teal headers. Photos stay put."""
+    import numpy as np
+
+    im = Image.open(path).convert("RGB")
+    arr = np.array(im)
+    h, w = arr.shape[:2]
+    name = path.name
+    if "_cover" in name:
+        if w < _COVER_SPLIT_X + 20:
+            return "skipped (unexpected cover width)"
+        panel = arr[:, : _COVER_SPLIT_X + 1]
+        arr[:, : _COVER_SPLIT_X + 1] = _recolor_chrome_array(panel)
+        Image.fromarray(arr).save(path, quality=92, optimize=True)
+        return f"cover panel x<={_COVER_SPLIT_X}"
+
+    # Poster: only full-width teal/mint rows (the header), plus flat swatches
+    # that are design bars rather than pixels inside a photograph.
+    panel = np.array(_PANEL, dtype=np.int16)
+    mint = np.array(_MINT, dtype=np.int16)
+    diff_p = np.max(np.abs(arr.astype(np.int16) - panel), axis=2)
+    diff_m = np.max(np.abs(arr.astype(np.int16) - mint), axis=2)
+    swatch = (diff_p <= 30) | (diff_m <= 30)
+    frac = swatch[:, ::3].mean(axis=1)
+    full = np.nonzero(frac > 0.35)[0]
+    if len(full) == 0:
+        return "no teal header"
+    if full[-1] > h * 0.55:
+        full = full[full < h * 0.45]
+        if len(full) == 0:
+            return "skipped (teal rows too low)"
+    mask = np.zeros(h, dtype=bool)
+    mask[full] = True
+    # Include a one-pixel fringe so antialiased edges of the band are included.
+    grown = mask.copy()
+    grown[1:] |= mask[:-1]
+    grown[:-1] |= mask[1:]
+    arr[grown] = _recolor_chrome_array(arr[grown])
+
+    # Small section bars below the header: only pixels that sit in a flat
+    # block of the original swatch colour. Product photos fail this test.
+    near = (diff_p <= 12) | (diff_m <= 22)
+    # 5x5 count via integral image
+    bit = near.astype(np.int32)
+    integ = np.pad(bit, ((1, 0), (1, 0))).cumsum(0).cumsum(1)
+    y0 = np.arange(h)
+    x0 = np.arange(w)
+    # vectorised window is heavy; sample candidates only
+    ys, xs = np.nonzero(near & ~grown[:, None])
+    changed = 0
+    for y, x in zip(ys.tolist(), xs.tolist()):
+        y1, y2 = max(0, y - 2), min(h, y + 3)
+        x1, x2 = max(0, x - 2), min(w, x + 3)
+        count = int(integ[y2, x2] - integ[y1, x2] - integ[y2, x1] + integ[y1, x1])
+        area = (y2 - y1) * (x2 - x1)
+        if count < max(15, int(area * 0.7)):
+            continue
+        if diff_m[y, x] <= 12 and diff_m[y, x] < diff_p[y, x]:
+            arr[y, x] = _MINT_TARGET
+        else:
+            arr[y, x] = _TARGET
+        changed += 1
+    Image.fromarray(arr).save(path, quality=92, optimize=True)
+    return f"header rows {int(full[0])}-{int(full[-1])}, bars {changed}"
+
+
 def main() -> None:
     check = "--check" in sys.argv
     do_html = "--html" in sys.argv or "--all" in sys.argv
     do_posters = "--posters" in sys.argv or "--all" in sys.argv
-    if not check and not do_html and not do_posters:
-        print("usage: fix_clinical_column.py --html | --posters | --all | --check")
+    do_chrome = "--chrome" in sys.argv
+    if not check and not do_html and not do_posters and not do_chrome:
+        print("usage: fix_clinical_column.py --html | --posters | --all | --chrome | --check")
         print("--posters is not idempotent; it was applied once to enlarge photo bands.")
+        print("--chrome recolours cover panels and poster headers in place.")
         return
+    if do_chrome and not check:
+        for path in sorted(ASSETS.glob("day*_cover*.jpg")) + sorted(ASSETS.glob("day*_poster*.jpg")):
+            print(f"{path.name}: {recolor_flattened_chrome(path)}")
+        if not do_html and not do_posters:
+            return
     html_changed = 0
     if do_html and not check:
         for path in sorted(ROOT.rglob("*.html")):
