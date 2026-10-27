@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A pneumatic source without electronics: bench pressure, flow, temperature, and noise</title>
+<meta name="description" content="An engineering paper on supplying gas to soft robots. The abstract reports a steady 7 bar and 6 L/min, a peak temperature of 36°C, and noise of 40 dBA. This is not a clinical result, and use of a named device is unverified.">
+<meta name="keywords" content="pneumatic source, soft robot, bench test, low noise, engineering study">
+<style>
+body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
+.header{background:#fff;border-bottom:4px solid #0050a0;padding:18px 24px;display:flex;align-items:center;gap:16px}
+.header img{height:44px}
+.header .col{font-size:20px;font-weight:700;color:#00356b}
+.header .sub{font-size:13px;color:#5a6c80}
+.nav{background:#00356b;color:#fff;padding:10px 24px;font-size:14px}
+.nav a{color:#d5e4f7;text-decoration:none;margin-right:14px}
+.wrap{max-width:780px;margin:0 auto;padding:28px 22px 60px;background:#fff}
+.issue{color:#0050a0;font-weight:700;letter-spacing:1px}
+h1{color:#00356b;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#00356b;font-size:21px;border-left:5px solid #0050a0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#e8f2fb;border-left:5px solid #00356b;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#fdf6ec;border:1px solid #f0d9a8;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:8px}
+.footer{border-top:1px solid #d3deec;margin-top:40px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+.btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a{color:#0050a0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="header"><img src="../assets/logo_official.png" alt="Syrebo"><div><div class="col">Syrebo Clinical Research Column</div><div class="sub">Evidence-based reads on robotic glove rehabilitation research</div></div></div>
+<div class="nav"><a href="../index.html">Column home</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a></div>
+<div class="wrap">
+<div class="issue">Supplement 07</div>
+<h1 class="en">A pneumatic source without electronics: bench pressure, flow, temperature, and noise</h1>
+<section class="paper"><p class="pk">From the paper</p><div class="pm"><p class="pt">Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots</p><p class="pa">Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim</p><p class="pv">Soft Robotics, OnlineFirst, 2026</p><p class="pi">DOI: 10.1177/21695172261442062</p><p class="pi"><a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">View source</a></p><p class="pi">Paper figures: reuse not confirmed; none are reproduced on this page.</p></div></section>
+
+<p>The paper proposes a way to supply gas to a soft robot: an integrated endothermic and exothermic reaction, with no electronic parts, regulated by passive mechanical components that follow the state of the system. The abstract reports a steady output of 7 bar and 6 L/min, a peak temperature of 36°C, and noise of 40 dBA. The subject is a gas source, not hand function, and not a claim that a rehabilitation product has been shown to work. Whether the full text demonstrates a named brand is unverified, so the paper is not counted as a confirmed device experiment.</p>
+<h2>Background</h2>
+<p>A soft structure moves when it has gas. The size, heat, noise, and control electronics of a pump limit the room a device can sit in. Another way to supply gas is an engineering question.</p>
+<p>Pressure and decibels on a bench describe a source specimen. Behavior of a whole device while a person uses it is a different test. This page repeats the performance sentences in the abstract and does not add fabrication steps.</p>
+<h2>Study overview</h2>
+<p>The abstract describes gas generated by a reaction of phosphoric acid and cesium bicarbonate, with endothermic and exothermic processes placed together to limit heat. Passive mechanical parts regulate the reaction as the system changes state. There is no electronic controller. The measurements are output, temperature, and noise. This page does not show a product photograph.</p>
+<p class="scan"><span class="tag">Study design</span></p>
+<p>A bench study of a pneumatic source. No patients, no hand-function or daily-activity scales, and no treatment course.</p>
+<p class="scan"><span class="tag">Sample and schedule</span></p>
+<p>A clinical sample does not apply. The readings come from steady tests of a source specimen, not from outcomes in a group of users.</p>
+<p class="scan"><span class="tag">Main findings</span></p>
+<p>The abstract reports steady pressure of 7 bar, steady flow of 6 L/min, a peak temperature of 36°C, and noise of 40 dBA. Those figures are what the authors use to call the source low-heat and near-silent as an engineering description. They are not a clinical safety conclusion and not a change in hand function.</p>
+<h2>What this study adds</h2>
+<p>For a discussion of soft rehabilitation hardware, the paper is a supply idea that is not a conventional pump. A link to a specific product depends on whether the full text demonstrates that product. Until then it stays a paper about a gas source, not a product specification.</p>
+<h2>Source</h2>
+<p class="limit"><span class="tag">Limits</span> A bench study, with no clinical efficacy conclusion. Specimen output is not the behavior of a finished device in use. Whether a named brand and model were demonstrated is unchecked, and no brand link is made.</p>
+<div class="source">Source: Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim. Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots. Soft Robotics, OnlineFirst, 2026. DOI: <a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">10.1177/21695172261442062</a>.</div>
+<div class="tip">Note: Rehabilitation outcomes vary by individual. Please follow the training plan prescribed by your physician or therapist.</div>
+<div class="footer">syrebo.com · Syrebo Clinical Research Column<br>This content is compiled from published studies for rehabilitation education only and does not constitute medical advice.</div>
+</div>
+</body>
+</html>

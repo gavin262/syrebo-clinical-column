@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>无电子元件的气动源：台架上的压力、流量、温度和噪声</title>
+<meta name="description" content="软体机器人供能的工程论文。摘要报告稳态 7 bar、6 L/min，最高温度 36°C，噪声 40 dBA。这不是临床疗效，也未核实是否演示了某一品牌设备。">
+<meta name="keywords" content="气动源、软体机器人、台架测试、低噪声、工程研究">
+<style>
+body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
+.header{background:#fff;border-bottom:4px solid #0050a0;padding:18px 24px;display:flex;align-items:center;gap:16px}
+.header img{height:44px}
+.header .col{font-size:20px;font-weight:700;color:#00356b}
+.header .sub{font-size:13px;color:#5a6c80}
+.nav{background:#00356b;color:#fff;padding:10px 24px;font-size:14px}
+.nav a{color:#d5e4f7;text-decoration:none;margin-right:14px}
+.wrap{max-width:780px;margin:0 auto;padding:28px 22px 60px;background:#fff}
+.issue{color:#0050a0;font-weight:700;letter-spacing:1px}
+h1{color:#00356b;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#00356b;font-size:21px;border-left:5px solid #0050a0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#e8f2fb;border-left:5px solid #00356b;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#fdf6ec;border:1px solid #f0d9a8;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:8px}
+.footer{border-top:1px solid #d3deec;margin-top:40px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+.btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a{color:#0050a0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="header"><img src="../assets/logo_official.png" alt="Syrebo"><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div></div>
+<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a></div>
+<div class="wrap">
+<div class="issue">补充研究 07</div>
+<h1>无电子元件的气动源：台架上的压力、流量、温度和噪声</h1>
+<section class="paper"><p class="pk">文献摘录</p><div class="pm"><p class="pt">Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots</p><p class="pa">Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim</p><p class="pv">Soft Robotics, OnlineFirst, 2026</p><p class="pi">DOI: 10.1177/21695172261442062</p><p class="pi"><a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">查看出处</a></p><p class="pi">论文图片：待确认授权，本页不转载。</p></div></section>
+
+<p>这篇论文提出一种给软体机器人供气的办法：把吸热和放热的化学反应放在一起，不靠电子元件，而用被动的机械部件按系统状态调节反应。摘要报告稳态输出 7 bar、6 L/min，最高温度 36°C，噪声 40 dBA。它讨论的是气源，不是手功能，也不是某一款康复产品已经被证明有效。是否在全文里演示了特定品牌的设备，尚未核实，因而不计入已确认的设备实验。</p>
+<h2>研究背景</h2>
+<p>软体结构要动，就需要气。气泵的体积、热量、噪声和控制电路，会限制设备能放在什么房间里。换一种供气方式，是工程问题。</p>
+<p>台架上的压力和分贝，描述的是气源试样。整机在人使用时的表现，要另做测试。本页只复述摘要里的性能句子，不补充制作步骤。</p>
+<h2>研究概述</h2>
+<p>摘要写的系统利用磷酸与碳酸氢铯的反应产生气体，并把吸热与放热过程放在一起，用来约束发热。被动机械部件随系统状态调节反应，不使用电子控制元件。评价对象是输出、温度和噪声。本页不放产品照片。</p>
+<p class="scan"><span class="tag">研究设计</span></p>
+<p>气动源的台架工程研究。没有患者，没有手功能或生活活动量表，没有疗程。</p>
+<p class="scan"><span class="tag">样本与周期</span></p>
+<p>不适用临床样本。读数来自气源试样的稳态测试，不是一批使用者的结局。</p>
+<p class="scan"><span class="tag">核心结果</span></p>
+<p>摘要报告稳态压力 7 bar、稳态流量 6 L/min、最高温度 36°C、噪声 40 dBA。这些数字支持作者把气源描述为低热、近静音的工程定位。它们不是临床安全性结论，也不是手功能变化。</p>
+<h2>研究意义</h2>
+<p>对软体康复设备的讨论，这篇论文提供的是“泵以外的供气思路”。它和具体产品的关系，必须以全文是否演示该设备为准。在此之前，只把它当作气源工程，不把它写成产品性能。</p>
+<h2>文章来源</h2>
+<p class="limit"><span class="tag">研究边界</span> 工程台架，没有临床疗效结论。试样输出不等于整机在使用环境中的表现。是否演示特定品牌及型号，全文待核，不作品牌关联。</p>
+<div class="source">研究出处：Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim. Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots. Soft Robotics, OnlineFirst, 2026. DOI: <a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">10.1177/21695172261442062</a>。</div>
+<div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
+<div class="footer">syrebo.com · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。</div>
+</div>
+</body>
+</html>
