@@ -7,45 +7,85 @@
 <meta name="description" content="ICIRA 2023 会议论文摘要：SY-HR08P，三周，三种运动模式，同时记录脑电和肌电。摘要报告手功能改善有限；主动模式后 β 与 γ 频段相干性增加。全文未取得。">
 <meta name="keywords" content="机器人手治疗、脑电图、肌电图、神经肌肉耦合、会议论文">
 <style>
-body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
-.header{background:#fff;border-bottom:4px solid #0050a0;padding:18px 24px;display:flex;align-items:center;gap:16px}
-.header img{height:44px}
-.header .col{font-size:20px;font-weight:700;color:#00356b}
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
 .header .sub{font-size:13px;color:#5a6c80}
-.nav{background:#00356b;color:#fff;padding:10px 24px;font-size:14px}
-.nav a{color:#d5e4f7;text-decoration:none;margin-right:14px}
-.wrap{max-width:780px;margin:0 auto;padding:28px 22px 60px;background:#fff}
-.issue{color:#0050a0;font-weight:700;letter-spacing:1px}
-h1{color:#00356b;font-size:30px;line-height:1.35;margin:10px 0 6px}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
 h1.en{font-size:28px}
-h2{color:#00356b;font-size:21px;border-left:5px solid #0050a0;padding-left:10px;margin:28px 0 10px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
 p{font-size:17px;line-height:1.85;margin:12px 0}
 img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
 .cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
-.source{background:#e8f2fb;border-left:5px solid #00356b;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
-.tip{background:#fdf6ec;border:1px solid #f0d9a8;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:8px}
-.footer{border-top:1px solid #d3deec;margin-top:40px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center}
-.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
-.btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
 p.limit{font-size:13.5px;color:#526478;line-height:1.65}
-.source a{color:#0050a0;font-weight:600}
+.source a,.related a{color:#0050A0;font-weight:600}
 .paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
-.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
 .paper .pm{padding:14px 16px 12px}
-.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
 .paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
 .paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
 .paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
 .paper figure{margin:0 16px 14px}
 .paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
 .paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
-.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
-p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
 </style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup01.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo Clinical Research Column">
+<meta property="og:title" content="三周机器人手治疗：手功能变化有限，脑电与肌电的耦合有信号">
+<meta property="og:description" content="ICIRA 2023 会议论文摘要：SY-HR08P，三周，三种运动模式，同时记录脑电和肌电。摘要报告手功能改善有限；主动模式后 β 与 γ 频段相干性增加。全文未取得。">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/zh/sup01.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/scene_hr08_zh.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="三周机器人手治疗：手功能变化有限，脑电与肌电的耦合有信号">
+<meta name="twitter:description" content="ICIRA 2023 会议论文摘要：SY-HR08P，三周，三种运动模式，同时记录脑电和肌电。摘要报告手功能改善有限；主动模式后 β 与 γ 频段相干性增加。全文未取得。">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/scene_hr08_zh.jpg">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/sup01.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup01.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/sup01.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"三周机器人手治疗：手功能变化有限，脑电与肌电的耦合有信号","description":"ICIRA 2023 会议论文摘要：SY-HR08P，三周，三种运动模式，同时记录脑电和肌电。摘要报告手功能改善有限；主动模式后 β 与 γ 频段相干性增加。全文未取得。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/sup01.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/scene_hr08_zh.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1007/978-981-99-6483-3_21","url":"https://doi.org/10.1007/978-981-99-6483-3_21","name":"The Impact of Three-Week Passive Robotic Hand Therapy on Stroke Patients"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1007/978-981-99-6483-3_21","sameAs":"https://doi.org/10.1007/978-981-99-6483-3_21"}}
+</script>
+<!-- seo:end -->
 </head>
 <body>
-<div class="header"><img src="../assets/logo_official.png" alt="Syrebo"><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div></div>
-<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a></div>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
+<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a><a href="join.html">合作</a></div>
 <div class="wrap">
 <div class="issue">补充研究 01</div>
 <h1>三周机器人手治疗：手功能变化有限，脑电与肌电的耦合有信号</h1>
@@ -56,8 +96,11 @@ p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#f
 <h2>研究背景</h2>
 <p>手功能量表回答的是动作和分数。脑电和肌电回答的是记录当时的电活动，以及脑与肌肉之间有没有更同步。两套结果可以来自同一次训练，却不能互相替代。</p>
 <p>会议摘要通常短于期刊全文。样本量、有没有对照、退出了多少人，摘要里没有写清的，不能靠产品手册补上。</p>
+<p>病房里的手功能问题，首先是能不能完成抓握、松开和简单的日常动作。脑电和肌电回答的是记录当时脑与肌肉是否更同步。早期训练如果只报告一次生理曲线，治疗师无法知道手的分数有没有一起变化。这篇会议摘要把有限的手功能变化和相干性信号放在一起，正好要求这两句话分开写。</p>
 <h2>研究概述</h2>
 <p>摘要写明设备是上海司羿智能科技有限公司的 SY-HR08P。研究用脑电图和肌电图观察三周机器人手治疗，并用源定位看左右感觉运动区。专栏配图是另一台设备的品牌场景，图注已标明不是论文中的 SY-HR08P。</p>
+<p>摘要能够确认的干预，是为期 3 周的机器人手治疗，设备写明为上海司羿智能科技有限公司的 SY-HR08P，并比较三种运动模式。记录手段是脑电图和肌电图，并用源定位观察左右感觉运动区。专栏照片是另一型号的品牌场景，图注写明不是论文中的 SY-HR08P。</p>
+<p>结局也要分成两层。功能层是手功能变化，摘要的用语是改善有限。生理层是整体脑活动，以及主动模式之后 β 与 γ 频段的脑电—肌电相干性。摘要没有给出可以改写成随机对照的分组人数。</p>
 <p class="scan"><span class="tag">研究设计</span></p>
 <p>比较三种运动模式的机器人手治疗，同时记录脑电和肌电。这是会议论文摘要能够确认的设计范围。摘要没有提供可以改写成随机对照试验的分组细节。</p>
 <p class="scan"><span class="tag">样本与周期</span></p>
@@ -66,11 +109,18 @@ p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#f
 <p>摘要报告手功能改善有限，不应改写成显著的功能恢复。摘要同时报告整体脑活动有改善，但三种模式之间，感觉运动区的变化没有显著差异。主动模式之后，β 与 γ 频段的脑电—肌电相干性增加。作者把这解释为神经驱动肌肉的效率信号。它仍是生理指标，不是日常生活能力的随访结果。</p>
 <h2>研究意义</h2>
 <p>这篇摘要把训练模式和脑活动、神经肌肉耦合放在一起，提醒读机器人手训练时不要只看一次量表。机制信号要单独成句，并且标明全文还没有核对效应值。</p>
+<p>对临床阅读，这篇摘要的用处是提醒：训练模式可以同时留下量表和生理记录，但生理记录不能代替手功能或生活活动。在全文核对样本量、对照和效应值之前，它只适合作为机制线索，不适合写进产品说明。</p>
 <h2>文章来源</h2>
-<p class="limit"><span class="tag">研究边界</span> 证据范围停在出版社摘要和书目。样本量、对照设置和精确统计量未核实，所以不写。手功能改善有限，不能改写成疗效已经确立。相干性不等于自理能力。</p>
+<p class="limit"><span class="tag">研究边界</span> 证据范围停在出版社摘要和书目。样本量、对照设置和精确统计量未核实，所以不写。手功能改善有限，不能改写成疗效已经确立。相干性不等于自理能力。未在摘要中出现的人数和 p 值不补写。</p>
 <div class="source">研究出处：Xinhang Li, Minjun Zheng, Jinbiao Liu, Li Zhang, Lizi Jiang, Shiwei Zheng, Linqing Feng, Tao Tang, Lei Ling, Xiangming Ye, Yina Wei. The Impact of Three-Week Passive Robotic Hand Therapy on Stroke Patients. Intelligent Robotics and Applications, ICIRA 2023, LNCS 14267. DOI: <a href="https://doi.org/10.1007/978-981-99-6483-3_21" rel="noopener noreferrer">10.1007/978-981-99-6483-3_21</a>。</div>
+<h2>相关阅读</h2>
+<ul class="related">
+<li><a href="day05.html">第 05 期 · 同一早期窗口里，用手功能量表回答可行性</a></li>
+<li><a href="sup05.html">补充研究 05 · 当次脑激活，同样不是疗程后的功能分数</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、康复门诊和医院康复科。可以讨论的是：按书面安排提供评估设备，以及协助把临床问题整理成研究方案要点。研究是否开展，以伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
-<div class="footer">syrebo.com · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
 </div>
 </body>
 </html>

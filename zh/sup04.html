@@ -7,45 +7,85 @@
 <meta name="description" content="慢性期随机对照：46 人随机，42 人完成。研究组接受机器人手加同步神经肌肉电刺激，再加常规物理治疗。论文报告握力组间 p=0.002；Purdue 钉板患手组间 p=0.076。">
 <meta name="keywords" content="神经肌肉电刺激、机器人手训练、握力、精细操作、慢性期">
 <style>
-body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
-.header{background:#fff;border-bottom:4px solid #0050a0;padding:18px 24px;display:flex;align-items:center;gap:16px}
-.header img{height:44px}
-.header .col{font-size:20px;font-weight:700;color:#00356b}
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
 .header .sub{font-size:13px;color:#5a6c80}
-.nav{background:#00356b;color:#fff;padding:10px 24px;font-size:14px}
-.nav a{color:#d5e4f7;text-decoration:none;margin-right:14px}
-.wrap{max-width:780px;margin:0 auto;padding:28px 22px 60px;background:#fff}
-.issue{color:#0050a0;font-weight:700;letter-spacing:1px}
-h1{color:#00356b;font-size:30px;line-height:1.35;margin:10px 0 6px}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
 h1.en{font-size:28px}
-h2{color:#00356b;font-size:21px;border-left:5px solid #0050a0;padding-left:10px;margin:28px 0 10px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
 p{font-size:17px;line-height:1.85;margin:12px 0}
 img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
 .cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
-.source{background:#e8f2fb;border-left:5px solid #00356b;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
-.tip{background:#fdf6ec;border:1px solid #f0d9a8;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:8px}
-.footer{border-top:1px solid #d3deec;margin-top:40px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center}
-.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
-.btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
 p.limit{font-size:13.5px;color:#526478;line-height:1.65}
-.source a{color:#0050a0;font-weight:600}
+.source a,.related a{color:#0050A0;font-weight:600}
 .paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
-.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
 .paper .pm{padding:14px 16px 12px}
-.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
 .paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
 .paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
 .paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
 .paper figure{margin:0 16px 14px}
 .paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
 .paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
-.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
-p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
 </style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup04.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo Clinical Research Column">
+<meta property="og:title" content="机器人手训练联合神经肌肉电刺激：握力组间有差别，精细操作未达组间显著">
+<meta property="og:description" content="慢性期随机对照：46 人随机，42 人完成。研究组接受机器人手加同步神经肌肉电刺激，再加常规物理治疗。论文报告握力组间 p=0.002；Purdue 钉板患手组间 p=0.076。">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/zh/sup04.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/scene_hr03b_zh.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="机器人手训练联合神经肌肉电刺激：握力组间有差别，精细操作未达组间显著">
+<meta name="twitter:description" content="慢性期随机对照：46 人随机，42 人完成。研究组接受机器人手加同步神经肌肉电刺激，再加常规物理治疗。论文报告握力组间 p=0.002；Purdue 钉板患手组间 p=0.076。">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/scene_hr03b_zh.jpg">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/sup04.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup04.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/sup04.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"机器人手训练联合神经肌肉电刺激：握力组间有差别，精细操作未达组间显著","description":"慢性期随机对照：46 人随机，42 人完成。研究组接受机器人手加同步神经肌肉电刺激，再加常规物理治疗。论文报告握力组间 p=0.002；Purdue 钉板患手组间 p=0.076。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/sup04.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/scene_hr03b_zh.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.21608/ejhm.2026.504952","url":"https://doi.org/10.21608/ejhm.2026.504952","name":"Combined Effect of Robotic Hand Training with Neuromuscular Electrical Stimulation on Hand Function and Quality of Life in Stroke Patients: A Randomized Controlled Trial"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.21608/ejhm.2026.504952","sameAs":"https://doi.org/10.21608/ejhm.2026.504952"}}
+</script>
+<!-- seo:end -->
 </head>
 <body>
-<div class="header"><img src="../assets/logo_official.png" alt="Syrebo"><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div></div>
-<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a></div>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
+<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a><a href="join.html">合作</a></div>
 <div class="wrap">
 <div class="issue">补充研究 04</div>
 <h1>机器人手训练联合神经肌肉电刺激：握力组间有差别，精细操作未达组间显著</h1>
@@ -56,8 +96,11 @@ p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#f
 <h2>研究背景</h2>
 <p>握力是一把力。钉板看的是把小栓放进孔里的精细操作。两项可以同时测量，却不必同时“显著”。只引用有组间差别的那一项，会把另一项的结果藏掉。</p>
 <p>电刺激和机器人手绑在一起时，句子的主语是组合。对照若只有常规物理治疗，时间上虽然对齐，内容并不是“同一套治疗再加一个因素”那么单纯。</p>
+<p>慢性期的手，距离发病已经数月，自发恢复不再是亚急性期那种主要解释。此时仍要把握力和精细操作分开。握力是力量。钉板是把小栓放进孔里。电刺激和机器人手绑在同一节里时，对照若只有常规物理治疗，组间差别属于这一套组合相对于常规治疗，而不是手套单独相对于空白。</p>
 <h2>研究概述</h2>
 <p>纳入年龄 50 至 65 岁、病程 6 至 24 个月的慢性期患者。研究组先做机器人手与同步电刺激 20 分钟，再做常规物理治疗 30 分钟；对照组做常规物理治疗 50 分钟。每周 3 次，共 6 周。检索片段出现 “Syrebo Hand Rehabilitation Robot, model SY” 的字样，支持品牌有关联，但完整型号没有获得，不能按现有产品目录猜一个型号。配图因此只作为品牌场景，并注明不是本研究设备照片。</p>
+<p>研究组先做机器人手与同步神经肌肉电刺激 20 分钟，再做常规物理治疗 30 分钟。对照组做常规物理治疗 50 分钟。每周 3 次，共 6 周。纳入年龄 50 至 65 岁、病程 6 至 24 个月。检索片段只支持品牌关联到 SY 开头，完整型号不猜测。</p>
+<p>本页转写的结局是握力（千克）和患手 Purdue 钉板。生活质量在题名里出现，完整分表尚未逐项核对，因此不展开。</p>
 <p class="scan"><span class="tag">研究设计</span></p>
 <p>随机对照。研究组是机器人手加同步神经肌肉电刺激，再加常规物理治疗。对照组是常规物理治疗。两组总时长都是 50 分钟，研究组里面叠了两种技术。</p>
 <p class="scan"><span class="tag">样本与周期</span></p>
@@ -66,11 +109,18 @@ p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#f
 <p>握力：论文报告研究组由 14.87±1.97 千克到 19.33±2.41 千克，组间 p=0.002。Purdue 钉板患手：研究组组内 p=0.001，组间 p=0.076。因此握力可以说论文报告了组间差别；精细操作只有组内变化，组间没有达到传统的显著标准。这两句要一起出现。</p>
 <h2>研究意义</h2>
 <p>这篇摘要能讨论的是机器人手与电刺激叠在常规物理治疗上之后，握力这一项的组间信号。它同时提醒，组内变化和组间差别不是同一句话，精细操作不能跟着握力一起写成组间结果。</p>
+<p>方案讨论可以停在论文已经分开的两句：握力的组间比较见该文 p=0.002；患手钉板的组间 p=0.076，不称作组间显著。向同事转述时保留组合方案、42 人完成和 6 周这些边界，不把千克的变化写成产品提升比例。</p>
 <h2>文章来源</h2>
-<p class="limit"><span class="tag">研究边界</span> 组合方案，不能把效果全部归因于手套。42 人、6 周。完整型号未获得。钉板组间 p=0.076，不应写成组间显著。生活质量的完整结果未在这里逐项转写。</p>
+<p class="limit"><span class="tag">研究边界</span> 组合方案，不能把效果全部归因于手套。42 人、6 周。完整型号未获得。钉板组间 p=0.076，不应写成组间显著。生活质量的完整结果未在这里逐项转写。不把未逐项核对的生活质量分数补进本页。</p>
 <div class="source">研究出处：Alaa Elhamy Mansour Abd-Eltwab, Wael Shendy, Ebtesam Fahmy, et al. Combined Effect of Robotic Hand Training with Neuromuscular Electrical Stimulation on Hand Function and Quality of Life in Stroke Patients: A Randomized Controlled Trial. The Egyptian Journal of Hospital Medicine, 2026;103(1):2607–2611. DOI: <a href="https://doi.org/10.21608/ejhm.2026.504952" rel="noopener noreferrer">10.21608/ejhm.2026.504952</a>。</div>
+<h2>相关阅读</h2>
+<ul class="related">
+<li><a href="sup02.html">补充研究 02 · 另一种叠加上常规路径的组合方案</a></li>
+<li><a href="day01.html">第 01 期 · 在常规治疗之外增加手部训练的随机对照</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、康复门诊和医院康复科。可以讨论的是：按书面安排提供评估设备，以及协助把临床问题整理成研究方案要点。研究是否开展，以伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
-<div class="footer">syrebo.com · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
 </div>
 </body>
 </html>

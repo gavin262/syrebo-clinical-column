@@ -7,45 +7,85 @@
 <meta name="description" content="武汉武昌医院的三组随机先导研究：66 例随机、52 例完成分析，比较镜像治疗、SY-HR06 与二者联合。论文报告联合组治疗后上肢运动评分高于镜像组。4 周，无随访。">
 <meta name="keywords" content="亚急性期康复、镜像疗法、机器人手套、随机先导研究、上肢运动功能">
 <style>
-body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
-.header{background:#fff;border-bottom:4px solid #0050a0;padding:18px 24px;display:flex;align-items:center;gap:16px}
-.header img{height:44px}
-.header .col{font-size:20px;font-weight:700;color:#00356b}
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
 .header .sub{font-size:13px;color:#5a6c80}
-.nav{background:#00356b;color:#fff;padding:10px 24px;font-size:14px}
-.nav a{color:#d5e4f7;text-decoration:none;margin-right:14px}
-.wrap{max-width:780px;margin:0 auto;padding:28px 22px 60px;background:#fff}
-.issue{color:#0050a0;font-weight:700;letter-spacing:1px}
-h1{color:#00356b;font-size:30px;line-height:1.35;margin:10px 0 6px}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
 h1.en{font-size:28px}
-h2{color:#00356b;font-size:21px;border-left:5px solid #0050a0;padding-left:10px;margin:28px 0 10px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
 p{font-size:17px;line-height:1.85;margin:12px 0}
 img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
 .cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
-.source{background:#e8f2fb;border-left:5px solid #00356b;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
-.tip{background:#fdf6ec;border:1px solid #f0d9a8;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:8px}
-.footer{border-top:1px solid #d3deec;margin-top:40px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center}
-.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
-.btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
 p.limit{font-size:13.5px;color:#526478;line-height:1.65}
-.source a{color:#0050a0;font-weight:600}
+.source a,.related a{color:#0050A0;font-weight:600}
 .paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
-.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
 .paper .pm{padding:14px 16px 12px}
-.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
 .paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
 .paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
 .paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
 .paper figure{margin:0 16px 14px}
 .paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
 .paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
-.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
-p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
 </style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/zh/day12.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo Clinical Research Column">
+<meta property="og:title" content="亚急性期上肢功能：SY-HR06 与镜像疗法的三组随机先导研究">
+<meta property="og:description" content="武汉武昌医院的三组随机先导研究：66 例随机、52 例完成分析，比较镜像治疗、SY-HR06 与二者联合。论文报告联合组治疗后上肢运动评分高于镜像组。4 周，无随访。">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/zh/day12.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/excerpt_day12_qian_fig1.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="亚急性期上肢功能：SY-HR06 与镜像疗法的三组随机先导研究">
+<meta name="twitter:description" content="武汉武昌医院的三组随机先导研究：66 例随机、52 例完成分析，比较镜像治疗、SY-HR06 与二者联合。论文报告联合组治疗后上肢运动评分高于镜像组。4 周，无随访。">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/excerpt_day12_qian_fig1.jpg">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/day12.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/day12.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/day12.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"亚急性期上肢功能：SY-HR06 与镜像疗法的三组随机先导研究","description":"武汉武昌医院的三组随机先导研究：66 例随机、52 例完成分析，比较镜像治疗、SY-HR06 与二者联合。论文报告联合组治疗后上肢运动评分高于镜像组。4 周，无随访。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/day12.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/excerpt_day12_qian_fig1.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.3389/fneur.2025.1602896","url":"https://doi.org/10.3389/fneur.2025.1602896","name":"Combination of robot-assisted glove and mirror therapy improves upper limb motor function in subacute stroke patients: a randomized controlled pilot study"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.3389/fneur.2025.1602896","sameAs":"https://doi.org/10.3389/fneur.2025.1602896"}}
+</script>
+<!-- seo:end -->
 </head>
 <body>
-<div class="header"><img src="../assets/logo_official.png" alt="Syrebo"><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div></div>
-<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a></div>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
+<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a><a href="join.html">合作</a></div>
 <div class="wrap">
 <div class="issue">第 12 期</div>
 <h1>亚急性期上肢功能：SY-HR06 与镜像疗法的三组随机先导研究</h1>
@@ -56,8 +96,11 @@ p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#f
 <h2>研究背景</h2>
 <p>上肢和手的练习，常常要在看着动作和自己动手之间来回切换。镜像治疗用健侧的影像来组织注意；气动手套把患手的开合重复做出来。两种做法可以分开用，也可以放在同一次训练里。分开用和一起用，不是同一件事。</p>
 <p>如果只报告“加了设备以后分数变了”，读者会把联合方案的变化算到设备上。三组设计的作用，是把镜像、手套、联合三条路径同时摆出来。它仍然是先导研究，回答的是这条路径值不值得继续做更大的试验，不是已经证明长期结果。</p>
+<p>拿杯子、扣纽扣、握笔，靠的是手指分开活动，步行往往更早回来。亚急性期神经仍在变化，量表上的差别可能混有自发恢复。治疗师读先导研究时，先核对它比较的是哪几条训练路径、评估的人知不知道分组、观察停在第几周。这篇论文把镜像、手套和两者同做放在同一张设计里，就是为了避免把联合方案的分数算到其中一件事情上。</p>
 <h2>研究概述</h2>
-<p>论文中的设备写的是羿生（Yisheng）SY-HR06，气动软体手套，戴在患侧手，做握紧和放松。三组之外都还有常规康复。结局包括上肢 Fugl-Meyer 评分（FMA-UE）、Brunnstrom 上肢与手分级、香港版上肢功能测试（FTHUE-HK）和功能独立性评定（FIM）。评估由不知晓分组的认证作业治疗师完成。专栏配图是品牌场景，不是这篇论文里的设备照片。</p>
+<p>论文中的设备写的是羿生 SY-HR06，气动软体手套，戴在患侧手，做握紧和放松。三组之外都还有常规康复。结局包括上肢 Fugl-Meyer 评分（FMA-UE）、Brunnstrom 上肢与手分级、香港版上肢功能测试（FTHUE-HK）和功能独立性评定（FIM）。评估由不知晓分组的认证作业治疗师完成。专栏配图是品牌场景，不是这篇论文里的设备照片。</p>
+<p>干预可以分成三句。镜像组看着健侧上肢在镜中的影像做抓握。手套组把论文所记的羿生 SY-HR06 戴在患侧，做握紧和放松。联合组在同一次训练里安排手套和镜像。三组之外都保留常规康复。每次 30 分钟，每周 5 次，共 4 周。</p>
+<p>结局用中文名称来读：上肢运动损伤看上肢 Fugl-Meyer 评定（文献缩写 FMA-UE）；上肢和手的恢复阶段看 Brunnstrom 分期；上肢在功能任务中的表现看香港版上肢功能测试（文献缩写 FTHUE-HK）；生活活动里的独立程度看功能独立性评定（文献缩写 FIM）。评分由不知晓分组的认证作业治疗师完成。</p>
 <p class="scan"><span class="tag">研究设计</span></p>
 <p>单盲、随机、对照的先导研究，三个平行组。镜像组看着健侧上肢的镜像做抓握。手套组用 SY-HR06 做开合。联合组把手套训练和镜像治疗放在同一次里。研究在武汉武昌医院进行，注册号 ChiCTR2200057613。</p>
 <p class="scan"><span class="tag">样本与周期</span></p>
@@ -67,11 +110,20 @@ p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#f
 <h2>研究意义</h2>
 <p>这篇论文把看影像和患手重复放在同一次训练里，并用三个组把“一起做”和“分开做”同时留下。可以讨论的是，在常规康复之上，治疗师如何排列镜像、手套或两者同做。</p>
 <p>不能把联合组的分数写成这一件手套的效果，也不能写成已经看到长期维持。作者还提到联合组右侧半球病变的比例较高，各组实际抓握次数也没有比较。这些都会影响怎么读这个 p 值。</p>
+<p>排程时可以讨论的是：镜像和患手重复开合写在同一节，还是分成两节，应当作为不同方案留下记录。记录里写清路径、周数、退出人数，以及评估者是否知道分组。联合组的分数不能单独放进某一件手套的说明，也不能写成已经看到长期维持。</p>
 <h2>文章来源</h2>
-<p class="limit"><span class="tag">研究边界</span> 先导研究，每组完成分析 16 至 18 人。只做 4 周，没有随访。14 人退出后未进入分析。病变侧的分布并不整齐，主动参与的次数没有量化。p 值是论文对这一项组间比较的报告。</p>
+<p class="limit"><span class="tag">研究边界</span> 先导研究，每组完成分析 16 至 18 人。只做 4 周，没有随访。14 人退出后未进入分析。病变侧的分布并不整齐，主动参与的次数没有量化。p 值是论文对这一项组间比较的报告。文中人数、分数和 p 值均引自该论文，不换算成提升比例，也不作为产品承诺。</p>
 <div class="source">研究出处：Qian J, Liang C, Liu R, Yu J, Yang T, Bai D. Combination of robot-assisted glove and mirror therapy improves upper limb motor function in subacute stroke patients: a randomized controlled pilot study. Frontiers in Neurology, 2025;16:1602896. DOI: <a href="https://doi.org/10.3389/fneur.2025.1602896" rel="noopener noreferrer">10.3389/fneur.2025.1602896</a>。临床试验注册：<a href="https://trialsearch.who.int/Trial2.aspx?TrialID=ChiCTR2200057613" rel="noopener noreferrer">ChiCTR2200057613</a>。</div>
+<h2>相关阅读</h2>
+<ul class="related">
+<li><a href="day02.html">第 02 期 · 软体手套与镜像疗法，并随访到 6 个月</a></li>
+<li><a href="day05.html">第 05 期 · 早期亚急性期软体手套的单盲随机试点</a></li>
+<li><a href="sup02.html">补充研究 02 · 两组都用了手套，组间差别来自多出来的干预</a></li>
+<li><a href="sup03.html">补充研究 03 · 在任务导向镜像之上比较有没有手套</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、康复门诊和医院康复科。可以讨论的是：按书面安排提供评估设备，以及协助把临床问题整理成研究方案要点。研究是否开展，以伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
-<div class="footer">syrebo.com · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
 </div>
 </body>
 </html>

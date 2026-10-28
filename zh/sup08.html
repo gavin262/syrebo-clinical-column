@@ -4,72 +4,122 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>手指屈曲测量：实验设备是高校自研，品牌只出现在引言</title>
-<meta name="description" content="Scientific Reports 的测量学研究：清迈大学自研 air-guitar，10 名健康人，比较静态手指屈曲的效度和重测信度。SYREBO 只在引言的商用设备名单里出现，不是实验设备。">
+<meta name="description" content="Scientific Reports 的测量学研究：清迈大学自研气吉他，10 名健康人，比较静态手指屈曲的效度和重测信度。SYREBO 只在引言的商用设备名单里出现，不是实验设备。">
 <meta name="keywords" content="手指屈曲、测量信度、效度、二次提及">
 <style>
-body{font-family:-apple-system,'Noto Sans SC','PingFang SC','Microsoft YaHei',Arial,sans-serif;margin:0;background:#f4f7fb;color:#1c2836}
-.header{background:#fff;border-bottom:4px solid #0050a0;padding:18px 24px;display:flex;align-items:center;gap:16px}
-.header img{height:44px}
-.header .col{font-size:20px;font-weight:700;color:#00356b}
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
 .header .sub{font-size:13px;color:#5a6c80}
-.nav{background:#00356b;color:#fff;padding:10px 24px;font-size:14px}
-.nav a{color:#d5e4f7;text-decoration:none;margin-right:14px}
-.wrap{max-width:780px;margin:0 auto;padding:28px 22px 60px;background:#fff}
-.issue{color:#0050a0;font-weight:700;letter-spacing:1px}
-h1{color:#00356b;font-size:30px;line-height:1.35;margin:10px 0 6px}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
 h1.en{font-size:28px}
-h2{color:#00356b;font-size:21px;border-left:5px solid #0050a0;padding-left:10px;margin:28px 0 10px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
 p{font-size:17px;line-height:1.85;margin:12px 0}
 img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
 .cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
-.source{background:#e8f2fb;border-left:5px solid #00356b;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
-.tip{background:#fdf6ec;border:1px solid #f0d9a8;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:8px}
-.footer{border-top:1px solid #d3deec;margin-top:40px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center}
-.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12)}
-.btn{display:inline-block;background:#00356b;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;margin-right:10px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
 p.limit{font-size:13.5px;color:#526478;line-height:1.65}
-.source a{color:#0050a0;font-weight:600}
+.source a,.related a{color:#0050A0;font-weight:600}
 .paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
-.paper .pk{margin:0;background:#0050a0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
 .paper .pm{padding:14px 16px 12px}
-.paper .pt{font-size:17px;line-height:1.45;color:#00356b;font-weight:700;margin:0 0 8px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
 .paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
 .paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
 .paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
 .paper figure{margin:0 16px 14px}
 .paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
 .paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
-.paper figcaption a,.paper .pi a{color:#0050a0;font-weight:600}
-p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050a0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
 </style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup08.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo Clinical Research Column">
+<meta property="og:title" content="手指屈曲测量：实验设备是高校自研，品牌只出现在引言">
+<meta property="og:description" content="Scientific Reports 的测量学研究：清迈大学自研气吉他，10 名健康人，比较静态手指屈曲的效度和重测信度。SYREBO 只在引言的商用设备名单里出现，不是实验设备。">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/zh/sup08.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/excerpt_sup08_kuv_fig1.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="手指屈曲测量：实验设备是高校自研，品牌只出现在引言">
+<meta name="twitter:description" content="Scientific Reports 的测量学研究：清迈大学自研气吉他，10 名健康人，比较静态手指屈曲的效度和重测信度。SYREBO 只在引言的商用设备名单里出现，不是实验设备。">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/excerpt_sup08_kuv_fig1.jpg">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/sup08.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup08.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/sup08.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"手指屈曲测量：实验设备是高校自研，品牌只出现在引言","description":"Scientific Reports 的测量学研究：清迈大学自研气吉他，10 名健康人，比较静态手指屈曲的效度和重测信度。SYREBO 只在引言的商用设备名单里出现，不是实验设备。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/sup08.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/excerpt_sup08_kuv_fig1.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1038/s41598-024-71094-y","url":"https://doi.org/10.1038/s41598-024-71094-y","name":"Validity and reliability of an air-guitar for measuring finger flexion in healthy participants"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1038/s41598-024-71094-y","sameAs":"https://doi.org/10.1038/s41598-024-71094-y"}}
+</script>
+<!-- seo:end -->
 </head>
 <body>
-<div class="header"><img src="../assets/logo_official.png" alt="Syrebo"><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div></div>
-<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a></div>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
+<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a><a href="join.html">合作</a></div>
 <div class="wrap">
 <div class="issue">补充研究 08</div>
 <h1>手指屈曲测量：实验设备是高校自研，品牌只出现在引言</h1>
-<section class="paper"><p class="pk">文献摘录</p><div class="pm"><p class="pt">Validity and reliability of an air-guitar for measuring finger flexion in healthy participants</p><p class="pa">P. Kuvijitsuwan, J. Klaphajone, P. Singjai, T. Kumpika, N. Thawinchai, C. Angkurawaranon, C. Aramrat, K. Utarachon</p><p class="pv">Scientific Reports, 2024;14:20113</p><p class="pi">DOI: 10.1038/s41598-024-71094-y</p><p class="pi"><a href="https://doi.org/10.1038/s41598-024-71094-y" rel="noopener noreferrer">查看出处</a></p></div><figure><img src="../assets/excerpt_sup08_kuv_fig1.jpg" alt="Kuvijitsuwan 等 2024 年论文图 1：研究使用的自研测量装置，不是 SYREBO 设备"><figcaption>原文图 1，研究中的自研 air-guitar，不是 SYREBO 设备。Kuvijitsuwan 等，Scientific Reports，2024，CC BY 4.0。 <a href="https://doi.org/10.1038/s41598-024-71094-y" rel="noopener noreferrer">10.1038/s41598-024-71094-y</a></figcaption></figure></section>
+<section class="paper"><p class="pk">文献摘录</p><div class="pm"><p class="pt">Validity and reliability of an air-guitar for measuring finger flexion in healthy participants</p><p class="pa">P. Kuvijitsuwan, J. Klaphajone, P. Singjai, T. Kumpika, N. Thawinchai, C. Angkurawaranon, C. Aramrat, K. Utarachon</p><p class="pv">Scientific Reports, 2024;14:20113</p><p class="pi">DOI: 10.1038/s41598-024-71094-y</p><p class="pi"><a href="https://doi.org/10.1038/s41598-024-71094-y" rel="noopener noreferrer">查看出处</a></p></div><figure><img src="../assets/excerpt_sup08_kuv_fig1.jpg" alt="Kuvijitsuwan 等 2024 年论文图 1：研究使用的自研测量装置，不是 SYREBO 设备"><figcaption>原文图 1，研究中的自研气吉他，不是 SYREBO 设备。Kuvijitsuwan 等，Scientific Reports，2024，CC BY 4.0。 <a href="https://doi.org/10.1038/s41598-024-71094-y" rel="noopener noreferrer">10.1038/s41598-024-71094-y</a></figcaption></figure></section>
 
-<p>这篇论文不能和品牌的直接实验混在一张表里。研究测试的是清迈大学自研的 air-guitar，用来测量健康人的手指静态屈曲。SYREBO 只作为商用设备的例子出现在引言里。论文的价值是这套自研装置相对于量角器的一致性和重测表现，不是任何一款手套的性能或疗效。</p>
+<p>这篇论文不能和品牌的直接实验混在一张表里。研究测试的是清迈大学自研的 气吉他，用来测量健康人的手指静态屈曲。SYREBO 只作为商用设备的例子出现在引言里。论文的价值是这套自研装置相对于量角器的一致性和重测表现，不是任何一款手套的性能或疗效。</p>
 <h2>研究背景</h2>
 <p>用品牌名去检索文献，引言、讨论和参考文献都会被命中。命中只说明作者曾经写到这个名字。实验部分写的那一台装置，才是这项研究的设备。</p>
 <p>把二次提及收成“产品研究”，会让设备清单和真正上过实验台的硬件对不上。这一篇被放进补充研究，就是为了把这条边界写清楚。</p>
+<p>用品牌检索文献，引言里的产品名单也会被命中。命中只说明作者写过这个名字。方法里写明的那一台装置，才是实验设备。把二次提及收成产品研究，会让证据表和真正上过实验台的硬件对不上。</p>
 <h2>研究概述</h2>
 <p>装置由清迈大学制作，不是 SYREBO 的产品。研究比较它和 Jamar 手指量角器，并在同一天的上午和下午各测一次。系统分辨率写的是 0.01°，量角器通常按 5° 读取。测量的是静态最大屈曲，不是三维动态过程。文献摘录中的图是原文图 1，显示的是这项研究自己的装置。</p>
+<p>实验装置由清迈大学制作，用来测量手指静态最大屈曲，不是本品的手套。对照工具是手指量角器。同一天的上午和下午各测一次。系统分辨率在文中写为 0.01 度，量角器通常按 5 度读取。文献摘录的图是原文图 1，画面是这项研究自己的装置。</p>
+<p>结局是测量学指标，不是治疗结局：与量角器的一致性、重测相关、测量标准误，以及 95% 最小可检出变化。对象是 10 名健康、右利手、无症状的成年人。</p>
 <p class="scan"><span class="tag">研究设计</span></p>
 <p>健康受试者中的效度与重测信度研究。对照工具是手指量角器。没有治疗分组，没有功能训练疗程。</p>
 <p class="scan"><span class="tag">样本与周期</span></p>
 <p>10 名健康、右利手、无症状的受试者，平均 34.6 岁，8 名男性、2 名女性。不能外推到患者，也不能外推到动态抓握。</p>
 <p class="scan"><span class="tag">核心结果</span></p>
-<p>air-guitar 与量角器的一致性相关系数为 0.62–0.90，平均差约 1°。air-guitar 的重测组内相关系数为 0.82–0.99，测量标准误 1°–3°，95% 最小可检出变化 1°–9°。这些数字描述的是自研测量装置。它们不能改写成品牌设备的验证结果。</p>
+<p>气吉他 与量角器的一致性相关系数为 0.62–0.90，平均差约 1°。气吉他 的重测组内相关系数为 0.82–0.99，测量标准误 1°–3°，95% 最小可检出变化 1°–9°。这些数字描述的是自研测量装置。它们不能改写成品牌设备的验证结果。</p>
 <h2>研究意义</h2>
 <p>收录这一篇，是为了演示“提到品牌”和“用该品牌做实验”的差别。方法学里的装置名称，优先于引言里的产品名单。</p>
+<p>收录本篇，是为了让检索品牌的人先看方法学里的装置名称。测量学上的一致性和重测表现，属于这台高校自研装置。它们不能改写成品牌设备的验证，也不能外推到患者或动态抓握。</p>
 <h2>文章来源</h2>
-<p class="limit"><span class="tag">研究边界</span> 只有 10 名健康受试者。只测静态最大屈曲，没有三维动态金标准。实验设备是高校自研。不是 SYREBO 的直接临床或工程研究。</p>
-<div class="source">研究出处：P. Kuvijitsuwan, J. Klaphajone, P. Singjai, T. Kumpika, N. Thawinchai, C. Angkurawaranon, C. Aramrat, K. Utarachon. Validity and reliability of an air-guitar for measuring finger flexion in healthy participants. Scientific Reports, 2024;14:20113. DOI: <a href="https://doi.org/10.1038/s41598-024-71094-y" rel="noopener noreferrer">10.1038/s41598-024-71094-y</a>。</div>
+<p class="limit"><span class="tag">研究边界</span> 只有 10 名健康受试者。只测静态最大屈曲，没有三维动态金标准。实验设备是高校自研。不是 SYREBO 的直接临床或工程研究。引言中的品牌名单不是实验设备清单。</p>
+<div class="source">研究出处：P. Kuvijitsuwan, J. Klaphajone, P. Singjai, T. Kumpika, N. Thawinchai, C. Angkurawaranon, C. Aramrat, K. Utarachon. Validity and reliability of an 气吉他 for measuring finger flexion in healthy participants. Scientific Reports, 2024;14:20113. DOI: <a href="https://doi.org/10.1038/s41598-024-71094-y" rel="noopener noreferrer">10.1038/s41598-024-71094-y</a>。</div>
+<h2>相关阅读</h2>
+<ul class="related">
+<li><a href="sup05.html">补充研究 05 · 品牌或型号未核对时，不计入已确认的设备实验</a></li>
+<li><a href="day11.html">第 11 期 · 学会综述里的产品记述，和单次实验不是同一件事</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、康复门诊和医院康复科。可以讨论的是：按书面安排提供评估设备，以及协助把临床问题整理成研究方案要点。研究是否开展，以伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
-<div class="footer">syrebo.com · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
 </div>
 </body>
 </html>

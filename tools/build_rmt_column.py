@@ -19,9 +19,11 @@ sys.path.insert(0, str(ROOT / "tools"))
 from rmt_content import STUDIES as A  # noqa: E402
 from rmt_content2 import MORE as B  # noqa: E402
 from rmt_content3 import MORE as C  # noqa: E402
+from rmt_depth import apply_depth  # noqa: E402
 from rmt_draw import assert_zh_copy, render  # noqa: E402
 
 STUDIES = A + B + C
+apply_depth(STUDIES)
 ASSETS = ROOT / "assets"
 SRC_IMG = Path("/tmp/rmt-img")
 LOCALES = ["fr", "es", "pt", "nl", "it", "ro", "tr", "hr", "ru", "lt", "id", "ko", "th", "hi"]
@@ -163,6 +165,7 @@ def article(study: dict, lang: str) -> str:
         else f'<div class="source">{src_lead}{esc(d["source"])} DOI: {doi_link(study["doi"])}.'
     )
     source_body += trial_html(lang, study.get("trial")) + "</div>"
+    related = related_html(study, lang)
     return f"""<!DOCTYPE html>
 <html lang="{html_lang}">
 <head>
@@ -197,12 +200,25 @@ def article(study: dict, lang: str) -> str:
 <h2>{h2_src}</h2>
 <p class="limit"><span class="tag">{t_limit}</span> {esc(d["limits"])}</p>
 {source_body}
+{related}
 <div class="tip">{tip}</div>
 <div class="footer">{foot}</div>
 </div>
 </body>
 </html>
 """
+
+
+def related_html(study: dict, lang: str) -> str:
+    items = study.get("related") or []
+    if not items:
+        return ""
+    heading = "相关阅读" if lang == "zh" else "Related reading"
+    rows = []
+    for href, zh_label, en_label in items:
+        label = zh_label if lang == "zh" else en_label
+        rows.append(f'<li><a href="{esc(href)}">{esc(label)}</a></li>')
+    return f'<h2>{heading}</h2>\n<ul class="related">\n' + "\n".join(rows) + "\n</ul>"
 
 
 def poster_page(study: dict, lang: str) -> str:
@@ -559,6 +575,9 @@ def check_pages() -> None:
             for token in needed:
                 if token not in text:
                     raise SystemExit(f"{path} missing {token}")
+            rel = "相关阅读" if lang == "zh" else "Related reading"
+            if rel not in text:
+                raise SystemExit(f"{path} missing {rel}")
             for token in banned:
                 if token in text:
                     raise SystemExit(f"{path} contains {token}")
@@ -575,12 +594,15 @@ def check_pages() -> None:
 def main() -> None:
     if len(STUDIES) != 9:
         raise SystemExit(f"expected 9 studies, got {len(STUDIES)}")
-    copy_images()
-    render_posters()
+    pages_only = "--pages" in sys.argv
+    if not pages_only:
+        copy_images()
+        render_posters()
     write_pages()
-    patch_indexes()
-    patch_nav()
-    write_licenses()
+    if not pages_only:
+        patch_indexes()
+        patch_nav()
+        write_licenses()
     check_pages()
 
 
