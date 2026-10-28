@@ -30,3 +30,30 @@ Not embedded, and why:
   08 Chen, 新医学 — reuse terms not stated (待确认授权)
   09 Prabhu, IJPRCP — reuse terms not stated (待确认授权)
   11 Furudate, 日本ロボット学会誌 — J-STAGE file, no CC grant (待确认授权)
+
+excerpt_day12_qian_fig1.jpg
+  Paper: Qian J, Liang C, Liu R, Yu J, Yang T, Bai D. Frontiers in Neurology, 2025;16:1602896.
+  DOI: 10.3389/fneur.2025.1602896
+  License: CC BY 4.0 (Frontiers).
+  Use: Figure 1, the three intervention panels, on the issue 12 excerpt card.
+  Attribution is in the figure caption.
+
+excerpt_sup08_kuv_fig1.jpg
+  Paper: Kuvijitsuwan P, et al. Scientific Reports, 2024;14:20113.
+  DOI: 10.1038/s41598-024-71094-y
+  License: CC BY 4.0 (Scientific Reports / Nature).
+  Use: Figure 1 of the university-built air-guitar. Not a SYREBO device.
+  Attribution is in the figure caption.
+
+Not embedded, and why (待确认授权):
+  sup01 Li 2023, Springer LNCS 14267 — publisher copyright, full text not obtained.
+  sup02 Zhang 2024, 亚太传统医药 — reuse terms not stated.
+  sup03 Rehman 2026, Hong Kong Physiotherapy Journal — license not confirmed from the abstract in hand.
+  sup04 Abd-Eltwab 2026, Egyptian Journal of Hospital Medicine — license not confirmed.
+  sup05 Liu 2024, IEEE TNSRE — publisher copyright.
+  sup06 Sgambato 2026, IEEE BioRob — publisher copyright.
+  sup07 Heo 2026, Soft Robotics — publisher copyright.
+
+Brand-scene photographs (scene_hr08.jpg, scene_hr03a.jpg, scene_hr06.jpg, scene_hr03b.jpg)
+  are SYREBO marketing scenes, not paper figures. Every use is captioned as not a
+  photograph of the study device. They are not literature excerpts.

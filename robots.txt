@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gavin262.github.io/syrebo-clinical-column/sitemap.xml

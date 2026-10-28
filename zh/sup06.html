@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>幅度模式超声作为软体手部外骨骼的人机接口：五名健康受试者</title>
+<meta name="description" content="工程会议论文：探索幅度模式超声能否在主动和被动条件下识别抓握意图，以驱动软体手部外骨骼。五名健康受试者，七种抓握。不是疗效研究，品牌型号未核实。">
+<meta name="keywords" content="人机接口、超声、软体外骨骼、抓握意图、工程可行性">
+<style>
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
+.header .sub{font-size:13px;color:#5a6c80}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a,.related a{color:#0050A0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup06.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo Clinical Research Column">
+<meta property="og:title" content="幅度模式超声作为软体手部外骨骼的人机接口：五名健康受试者">
+<meta property="og:description" content="工程会议论文：探索幅度模式超声能否在主动和被动条件下识别抓握意图，以驱动软体手部外骨骼。五名健康受试者，七种抓握。不是疗效研究，品牌型号未核实。">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/zh/sup06.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="幅度模式超声作为软体手部外骨骼的人机接口：五名健康受试者">
+<meta name="twitter:description" content="工程会议论文：探索幅度模式超声能否在主动和被动条件下识别抓握意图，以驱动软体手部外骨骼。五名健康受试者，七种抓握。不是疗效研究，品牌型号未核实。">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/sup06.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup06.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/sup06.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"幅度模式超声作为软体手部外骨骼的人机接口：五名健康受试者","description":"工程会议论文：探索幅度模式超声能否在主动和被动条件下识别抓握意图，以驱动软体手部外骨骼。五名健康受试者，七种抓握。不是疗效研究，品牌型号未核实。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/sup06.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1109/BIOROB66782.2026.11681602","url":"https://doi.org/10.1109/BIOROB66782.2026.11681602","name":"Ultrasound-Based Human–Machine Interfacing for Soft Hand Exoskeletons under Assisted and Passive Conditions"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1109/BIOROB66782.2026.11681602","sameAs":"https://doi.org/10.1109/BIOROB66782.2026.11681602"}}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
+<div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a><a href="join.html">合作</a></div>
+<div class="wrap">
+<div class="issue">补充研究 06</div>
+<h1>幅度模式超声作为软体手部外骨骼的人机接口：五名健康受试者</h1>
+<section class="paper"><p class="pk">文献摘录</p><div class="pm"><p class="pt">Ultrasound-Based Human–Machine Interfacing for Soft Hand Exoskeletons under Assisted and Passive Conditions</p><p class="pa">Bruno Grandi Sgambato, Juan C. Maldonado-Mejía, Tristan Wen Jie Choo, Marcela Múnera, Camilo A. R. Díaz, Majid Taghavi, Dario Farina, Carlos A. Cifuentes</p><p class="pv">2026 11th IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics, pp. 495–500</p><p class="pi">DOI: 10.1109/BIOROB66782.2026.11681602</p><p class="pi"><a href="https://doi.org/10.1109/BIOROB66782.2026.11681602" rel="noopener noreferrer">查看出处</a></p><p class="pi">论文图片：待确认授权，本页不转载。</p></div></section>
+
+<p>这项研究问的是：幅度模式超声能不能作为软体手部外骨骼的人机接口，在主动和被动条件下识别抓握意图。机构库摘要片段写到，5 名健康受试者完成 7 种来自标准化评估协议的抓握。它是工程可行性探索，不是卒中后患者的疗效研究。完整准确率和设备品牌都还没有用全文核对，本页不从别的超声论文搬数字过来。</p>
+<h2>研究背景</h2>
+<p>表面肌电是常见的意图信号。幅度模式超声走的是另一条路，用前臂的超声回波来推断肌肉状态。对软体外骨骼来说，这是接口问题：机器如何知道手想做什么。</p>
+<p>健康人在实验室里完成规定抓握，说明流程能跑通。它不说明患者在日常使用中同样稳定，也不说明某一品牌的手套参加了实验。</p>
+<p>软体外骨骼要跟着人的意图动，就需要一种信号告诉机器手想做什么。表面肌电是常见选择。幅度模式超声改看前臂的回波。对康复科来说，这仍是接口能不能识别规定动作的问题，不是患者疗程结束后的功能问题。</p>
+<h2>研究概述</h2>
+<p>论文关注幅度模式超声采集的前臂信号如何用于软体手部外骨骼，并比较主动与被动条件。任务是 7 种抓握，对象是健康人。当前资料不足以确认交叉验证的完整流程、识别准确率，以及外骨骼的品牌和型号。本页不放产品照片。</p>
+<p>对象是 5 名健康受试者。任务是 7 种来自标准化评估协议的抓握，比较主动与被动条件。当前资料不足以确认识别准确率、交叉验证的完整流程，以及外骨骼的品牌和型号。本页不放产品照片，也不从其他超声论文借用准确率。</p>
+<p class="scan"><span class="tag">研究设计</span></p>
+<p>人机接口的工程实验，比较主动与被动条件下基于超声的抓握意图识别。不是随机治疗试验，没有功能量表的疗程比较。</p>
+<p class="scan"><span class="tag">样本与周期</span></p>
+<p>5 名健康受试者，7 种抓握。没有患者样本，因此没有临床疗程可写。</p>
+<p class="scan"><span class="tag">核心结果</span></p>
+<p>能够确认的输出，是主动和被动条件下的意图识别探索，以及 5 人、7 种抓握这一实验规模。识别准确率和统计结果待全文。其他论文里的准确率数字不移植到这项研究。</p>
+<h2>研究意义</h2>
+<p>幅度模式超声提供了一条不同于表面肌电的意图通路。它的价值停在接口可行性。从健康人实验走到日常使用，还要另做可用性、稳定性和安全性的工作。在品牌写进方法学之前，不把它计成某一产品的实验。</p>
+<p>工程阅读可以把它当作一条不同于表面肌电的意图通路，规模停在五名健康人和七种抓握。走到日常使用，还需要另行讨论可用性、稳定性和安全。在方法学写明品牌之前，不把它放进某一产品的证据表。</p>
+<h2>文章来源</h2>
+<p class="limit"><span class="tag">研究边界</span> 只有 5 名健康受试者，不是患者疗效证据。全文未取得，设备品牌、型号和完整性能指标未核实。不作为已确认的设备实验。其他论文的识别率不移植到本页。</p>
+<div class="source">研究出处：Bruno Grandi Sgambato, Juan C. Maldonado-Mejía, Tristan Wen Jie Choo, Marcela Múnera, Camilo A. R. Díaz, Majid Taghavi, Dario Farina, Carlos A. Cifuentes. Ultrasound-Based Human–Machine Interfacing for Soft Hand Exoskeletons under Assisted and Passive Conditions. 2026 11th IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics, pp. 495–500. DOI: <a href="https://doi.org/10.1109/BIOROB66782.2026.11681602" rel="noopener noreferrer">10.1109/BIOROB66782.2026.11681602</a>。</div>
+<h2>相关阅读</h2>
+<ul class="related">
+<li><a href="sup07.html">补充研究 07 · 另一项台架工程：气源，不是手功能</a></li>
+<li><a href="sup05.html">补充研究 05 · 任务中的脑激活，同样不是疗效试验</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、康复门诊和医院康复科。可以讨论的是：按书面安排提供评估设备，以及协助把临床问题整理成研究方案要点。研究是否开展，以伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
+</div>
+</body>
+</html>
