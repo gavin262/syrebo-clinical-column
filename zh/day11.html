@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>面向居家的手指康复机器人：日本机器人学会誌中的开发记述</title>
-<meta name="description" content="《日本机器人学会誌》2023 年文章讨论面向居家的片麻痺手指康复机器人，并提到 Syrebo 是少数已产品化的例子之一。这不是临床试验。">
+<meta name="description" content="2023 年综述讨论居家康复机器人开发，并以羿生手套为背景例子；这不是针对羿生设备的临床试验。">
 <meta name="keywords" content="居家康复机器人、手指康复机器人、家庭康复、日本市场">
 <style>
 /* column-shell */
@@ -65,15 +65,15 @@ ul.related li{margin:6px 0;line-height:1.6}
 <link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/zh/day11.html">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Syrebo Clinical Research Column">
+<meta property="og:site_name" content="羿生临床研究专栏">
 <meta property="og:title" content="面向居家的手指康复机器人：日本机器人学会誌中的开发记述">
-<meta property="og:description" content="《日本机器人学会誌》2023 年文章讨论面向居家的片麻痺手指康复机器人，并提到 Syrebo 是少数已产品化的例子之一。这不是临床试验。">
+<meta property="og:description" content="2023 年综述讨论居家康复机器人开发，并以羿生手套为背景例子；这不是针对羿生设备的临床试验。">
 <meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/zh/day11.html">
 <meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover.jpg">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="面向居家的手指康复机器人：日本机器人学会誌中的开发记述">
-<meta name="twitter:description" content="《日本机器人学会誌》2023 年文章讨论面向居家的片麻痺手指康复机器人，并提到 Syrebo 是少数已产品化的例子之一。这不是临床试验。">
+<meta name="twitter:description" content="2023 年综述讨论居家康复机器人开发，并以羿生手套为背景例子；这不是针对羿生设备的临床试验。">
 <meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover.jpg">
 <link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/day11.html">
 <link rel="alternate" hreflang="es" href="https://gavin262.github.io/syrebo-clinical-column/es/day11.html">
@@ -93,41 +93,41 @@ ul.related li{margin:6px 0;line-height:1.6}
 <link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/day11.html">
 <link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/day11.html">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"面向居家的手指康复机器人：日本机器人学会誌中的开发记述","description":"《日本机器人学会誌》2023 年文章讨论面向居家的片麻痺手指康复机器人，并提到 Syrebo 是少数已产品化的例子之一。这不是临床试验。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/day11.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","url":"https://doi.org/10.7210/jrsj.41.331","name":"在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","sameAs":"https://doi.org/10.7210/jrsj.41.331"}}
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"面向居家的手指康复机器人：日本机器人学会誌中的开发记述","description":"2023 年综述讨论居家康复机器人开发，并以羿生手套为背景例子；这不是针对羿生设备的临床试验。","inLanguage":"zh-CN","url":"https://gavin262.github.io/syrebo-clinical-column/zh/day11.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","url":"https://doi.org/10.7210/jrsj.41.331","name":"在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","sameAs":"https://doi.org/10.7210/jrsj.41.331"}}
 </script>
 <!-- seo:end -->
 </head>
 <body>
-<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">Syrebo 临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="司羿智能"></a><div><div class="col">羿生临床研究专栏</div><div class="sub">循证 · 康复机器人手套临床研究解读</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">官网</a></div>
 <div class="nav"><a href="../index.html">专栏首页</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">补01</a><a href="sup02.html">补02</a><a href="sup03.html">补03</a><a href="sup04.html">补04</a><a href="sup05.html">补05</a><a href="sup06.html">补06</a><a href="sup07.html">补07</a><a href="sup08.html">补08</a><a href="join.html">合作</a></div>
 <div class="wrap">
 <div class="issue">第 11 期</div>
 <h1>面向居家的手指康复机器人：日本机器人学会誌中的开发记述</h1>
-<section class="paper"><p class="pk">文献摘录</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4)</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">查看出处</a></p></div></section>
+<section class="paper"><p class="pk">文献摘录</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4): 331–337</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">查看出处</a></p></div></section>
 <img class="cover" src="../assets/day11_cover.jpg" alt="面向居家的手指康复机器人：日本机器人学会誌中的开发记述">
-<img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma 等，Cureus 2024，图2：Syrebo 软体康复手套与主机（CC BY 4.0）。此图来自该病例报告，不是日本机器人学会综述的配图；综述未刊出手套照片。">
-<div class="cap">Sharma 等，Cureus 2024，图2：Syrebo 软体康复手套与主机（CC BY 4.0）。此图来自该病例报告，不是日本机器人学会综述的配图；综述未刊出手套照片。 <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a></div>
-<p>居家手康复说了很多年，真正写进学会论文的产品化例子仍然少。2023 年《日本机器人学会誌》刊登古館裕大等人的文章，主题是面向居家使用的片麻痺手指康复机器人，以及开发过程中如何与医疗人员协作。作者在论述中指出，已实现产品化的案例很少，并把 Syrebo 手功能康复手套列为其中的例子。这是一篇开发与协作的记述，不是疗效试验。</p>
+<img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma 等，Cureus 2024，图 2：羿生软体康复手套与主机（CC BY 4.0）。此图来自该病例报告，不是日本机器人学会文章的配图。">
+<div class="cap">Sharma 等，Cureus 2024，图 2：羿生软体康复手套与主机（CC BY 4.0）。此图来自该病例报告，不是日本机器人学会文章的配图。 <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer">CC BY 4.0 许可</a></div>
+<p>居家手康复已经讨论多年。2023 年《日本机器人学会誌》刊登古館裕大等人的文章，讨论与医疗人员合作开发居家康复机器人。作者在手指康复讨论中将羿生手套列为一个当时已商用的例子。<small>羿生是司羿智能的中国品牌，国际品牌为 Syrebo。</small>这是相关领域研究，不是针对羿生设备的临床试验。</p>
 <h2>研究背景</h2>
 <p>从病房到家庭，中间差的是穿脱、安全边界和没有治疗师在场时的使用。工程论文会把这些约束写在与临床人员的协作里。被点名，说明作者在举例时想到了这一产品，不等于学会完成了一项对照研究。</p>
-<p>“少数已经产品化”同时是一种限制：作者强调这类例子仍然少。读成“居家康复已经普遍实现”，会把举例写成流行病学结论。</p>
+<p>作者在 2023 年观察到，面向居家使用、已经实用化的例子相对较少。这说明的是当时的背景，并不能代表目前的市场情况。</p>
 <h2>研究概述</h2>
-<p>该文没有刊出手套照片。专栏所用的手套与主机图片来自 Sharma 等人 2024 年《Cureus》病例报告的图 2（CC BY 4.0），已在图注中说明，不能当作日本机器人学会这篇论文的原图。</p>
+<p>专栏所用的手套与主机图片来自 Sharma 等人 2024 年《Cureus》病例报告的图 2（CC BY 4.0），不是日本机器人学会这篇文章的原图。</p>
 <p class="scan"><span class="tag">研究设计</span></p>
-<p>学会期刊上的开发记述，讨论居家场景下的手指康复机器人，以及与医疗人员的协作。没有随机分组，没有功能量表的组间比较。</p>
+<p>这篇综述讨论与医疗人员合作开发康复机器人，包括作者的手指康复与虚弱预防机器人工作；它没有描述针对羿生设备的临床试验。</p>
 <p class="scan"><span class="tag">样本与周期</span></p>
-<p>不适用临床样本量。文章评论的是产品化路径，而不是一批患者的结局。</p>
+<p>文章讨论开发工作并引用其他研究，没有提供针对羿生产品试验的临床样本。</p>
 <p class="scan"><span class="tag">核心结果</span></p>
-<p>论文的表述是：面向家庭、已经产品化的手指康复机器人仍然少，Syrebo 是被提到的例子之一。本专栏按这个范围引用，不把它改写成疗效、市场排名或“患者在家一定能完成训练”。</p>
+<p>作者在 2023 年指出，面向居家、已实用化的产品相对较少，并以羿生手套为例。文章讨论的是康复机器人开发，不能据此证明羿生产品疗效。</p>
 <h2>研究意义</h2>
-<p>这篇记述的价值，是把居家使用写成一个需要和医疗人员一起定义的工程问题。产品化例子的存在，只说明有设备走完了从样机到产品的一步。</p>
+<p>这篇综述讨论医疗人员如何参与居家康复机器人的开发。文章将羿生手套作为商业实例，同时另行介绍作者自己的项目。</p>
 <p>家庭里能否安全、持续地使用，仍然要看适应证、监督和单独的临床研究。学会论文没有提供这些数据。</p>
 <h2>文章来源</h2>
-<p class="limit"><span class="tag">研究边界</span> 不是针对 Syrebo 的临床试验。原文强调产品化案例仍少。配图来自另一篇开放获取病例报告。</p>
-<div class="source">研究出处：古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4). DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
-<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、康复门诊和医院康复科。可以讨论的是：按书面安排提供评估设备，以及协助把临床问题整理成研究方案要点。研究是否开展，以伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<p class="limit"><span class="tag">研究边界</span> 不是针对羿生设备的临床试验。论文对产品化数量的观察属于 2023 年的背景。配图来自另一篇开放获取病例报告。</p>
+<div class="source">研究出处：古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4):331–337. DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
+<aside class="cta" id="join-research"><h2>参与临床研究合作</h2><p>本专栏面向康复治疗师、临床医生、康复门诊和医院康复科。欢迎就研究问题或与羿生开展临床研究合作的可能性与我们联系。研究是否开展，以适用的伦理审查和双方协议为准。</p><p>某一篇论文里的分数不是产品效果，本页也不比较其他品牌。</p><p><a class="btn" href="join.html">查看合作说明</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">官网联系页</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">温馨提示：康复效果因人而异，具体训练方案请在医生或治疗师指导下制定。</div>
-<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · 羿生临床研究专栏<br>本文内容基于已发表研究整理，仅供康复科普参考，不构成医疗建议。<p class="footlinks"><a href="https://cn.syrebo.com/contact-us">官网联系页</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">参与临床研究合作</a></p></div>
 </div>
 </body>
 </html>
