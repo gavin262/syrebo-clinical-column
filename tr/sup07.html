@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Elektroniksiz pnömatik kaynak: tezgâhta basınç, akış, sıcaklık ve gürültü</title>
+<meta content="Bir mühendislik makalesi yumuşak robotlar için pnömatik kaynak inceliyor. Özette basınç, akış, sıcaklık ve gürültünün tezgâh ölçümleri bildiriliyor. Bunlar klinik bulgu veya Syrebo ürün spesifikasyonu değildir." name="description"/>
+<meta content="pnömatik kaynak, yumuşak robot, tezgâh testi, düşük gürültü, mühendislik çalışması" name="keywords"/>
+<style>
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
+.header .sub{font-size:13px;color:#5a6c80}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a,.related a{color:#0050A0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
+</style>
+<!-- seo:start -->
+<link href="https://gavin262.github.io/syrebo-clinical-column/tr/sup07.html" rel="canonical"/>
+<meta content="index,follow" name="robots"/>
+<meta content="article" property="og:type"/>
+<meta content="Syrebo Klinik Araştırma Köşesi" property="og:site_name"/>
+<meta content="Elektroniksiz pnömatik kaynak: tezgâhta basınç, akış, sıcaklık ve gürültü" property="og:title"/>
+<meta content="Bir mühendislik makalesi yumuşak robotlar için pnömatik kaynak inceliyor. Özette basınç, akış, sıcaklık ve gürültünün tezgâh ölçümleri bildiriliyor. Bunlar klinik bulgu veya Syrebo ürün spesifikasyonu değildir." property="og:description"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/tr/sup07.html" property="og:url"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png" property="og:image"/>
+<meta content="tr_TR" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Elektroniksiz pnömatik kaynak: tezgâhta basınç, akış, sıcaklık ve gürültü" name="twitter:title"/>
+<meta content="Bir mühendislik makalesi yumuşak robotlar için pnömatik kaynak inceliyor. Özette basınç, akış, sıcaklık ve gürültünün tezgâh ölçümleri bildiriliyor. Bunlar klinik bulgu veya Syrebo ürün spesifikasyonu değildir." name="twitter:description"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png" name="twitter:image"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html" hreflang="en" rel="alternate"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/zh/sup07.html" hreflang="zh-CN" rel="alternate"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Elektroniksiz pnömatik kaynak: tezgâhta basınç, akış, sıcaklık ve gürültü","description":"Bir mühendislik makalesi yumuşak robotlar için pnömatik kaynak inceliyor. Özette basınç, akış, sıcaklık ve gürültünün tezgâh ölçümleri bildiriliyor. Bunlar klinik bulgu veya Syrebo ürün spesifikasyonu değildir.","inLanguage":"tr","url":"https://gavin262.github.io/syrebo-clinical-column/tr/sup07.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","url":"https://doi.org/10.1177/21695172261442062","name":"Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","sameAs":"https://doi.org/10.1177/21695172261442062"}}</script>
+<!-- seo:end -->
+</head>
+<body>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img alt="Syrebo" src="../assets/logo_official.png"/></a><div><div class="col">Syrebo Klinik Araştırma Köşesi</div><div class="sub">Robotik eldiven rehabilitasyonu araştırmalarına kanıta dayalı bakış</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
+<div class="nav"><a href="../index.html">Köşe ana sayfası</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="join.html">Araştırma</a></div>
+<div class="wrap">
+<div class="issue">Ek 07</div>
+<h1 class="en">Elektroniksiz pnömatik kaynak: tezgâhta basınç, akış, sıcaklık ve gürültü</h1>
+<section class="paper"><p class="pk">Makaleden</p><div class="pm"><p class="pt">Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots</p><p class="pa">Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim</p><p class="pv">Soft Robotics, OnlineFirst, 2026</p><p class="pi">DOI: 10.1177/21695172261442062</p><p class="pi"><a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">Kaynağı görüntüle</a></p><p class="pi">Makale görsellerinin yeniden kullanım izni doğrulanmadı; bu sayfada hiçbirine yer verilmedi.</p></div></section>
+<p>Makale, yumuşak robota gaz sağlamanın bir yolunu öneriyor: elektronik parça içermeyen, sistemin durumunu izleyen pasif mekanik bileşenlerle düzenlenen birleşik endotermik ve ekzotermik reaksiyon. Özet 7 bar ve 6 L/min kararlı çıkış, 36°C tepe sıcaklık ve 40 dBA gürültü bildiriyor. Konu el işlevi veya bir rehabilitasyon ürününün işe yaradığının gösterildiği iddiası değil, gaz kaynağıdır. İncelenen kamuya açık özet bir Syrebo ürünü belirtmiyor; tam metinde belirli bir marka veya modelin gösterilip gösterilmediği doğrulanmadı.</p>
+<h2>Arka plan</h2>
+<p>Yumuşak yapı gaz aldığında hareket eder. Pompanın boyutu, ısısı, gürültüsü ve kontrol elektroniği cihazın yerleştirilebileceği alanı sınırlar. Gaz sağlamanın başka bir yolu mühendislik sorusudur.</p>
+<p>Tezgâhtaki basınç ve desibel değerleri kaynak örneğini tanımlar. Bir kişinin kullanımı sırasında bütün cihazın davranışı farklı bir testtir. Bu sayfa özetteki performans ifadelerini aktarır ve üretim adımları eklemez.</p>
+<p>Yumuşak yapı gaz aldığında biçim değiştirir. Pompanın boyutu, ısısı, gürültüsü ve elektroniği cihazın yerleştirilebileceği alanı etkiler. Gaz sağlamanın başka bir yolu, kaynak örneğinin tezgâhta nasıl davrandığını yanıtlar: basınç, akış, sıcaklık ve ses. El skorunu veya bir eğitim seansının güvenli olup olmadığını yanıtlamaz.</p>
+<h2>Çalışmaya genel bakış</h2>
+<p>Özet, fosforik asit ve sezyum bikarbonat reaksiyonundan üretilen gazı ve ısıyı sınırlamak için bir araya getirilen endotermik ve ekzotermik süreçleri anlatıyor. Pasif mekanik parçalar sistemin durumu değiştikçe reaksiyonu düzenliyor. Elektronik denetleyici yoktur. Ölçümler çıkış, sıcaklık ve gürültüdür. Bu sayfada ürün fotoğrafı gösterilmez.</p>
+<p>Özetteki sistem fosforik asit ve sezyum bikarbonattan gaz üretir, ısıyı sınırlamak için endotermik ve ekzotermik süreçleri birleştirir ve sistemin durumunu izleyen pasif mekanik parçalar kullanır. Elektronik denetleyici yoktur. Ölçümler kaynak örneğine aittir. Bu sayfa üretim adımı eklemez veya ürün fotoğrafı göstermez. Tam metinde adı belirli bir rehabilitasyon cihazının gösterilip gösterilmediği doğrulanmadı.</p>
+<p class="scan"><span class="tag">Çalışma tasarımı</span></p>
+<p>Pnömatik kaynak üzerinde tezgâh çalışması. İncelenen kamuya açık özet hastaları, el işlevi sonuçlarını veya bir tedavi sürecini açıklamıyor.</p>
+<p class="scan"><span class="tag">Örneklem ve takvim</span></p>
+<p>Özet, hasta grubundaki sonuçlar yerine deneysel kaynağın ölçümlerini bildiriyor.</p>
+<p class="scan"><span class="tag">Temel bulgular</span></p>
+<p>Özet 7 bar kararlı basınç, 6 L/min kararlı akış, 36°C tepe sıcaklık ve 40 dBA gürültü bildiriyor. Bu değerler yazarların bildirdiği koşullarda test edilen kaynağı tanımlar; bir Syrebo ürününün spesifikasyonları değildir. Klinik güvenlik sonucu veya el işlevinde değişim değildir.</p>
+<h2>Bu çalışma ne katıyor?</h2>
+<p>Yumuşak rehabilitasyon donanımı tartışmasında makale, geleneksel pompadan farklı bir besleme fikridir. Belirli bir ürünle bağlantı, tam metnin o ürünü gösterip göstermediğine bağlıdır. O zamana kadar gaz kaynağı hakkındaki bir makaledir, ürün spesifikasyonu değildir.</p>
+<p>Donanım tartışmasında makale bir mühendislik fikri sunar: geleneksel pompadan farklı bir besleme yolu. Tezgâh ölçümleri klinik güvenlik vaadi veya el işlevinde değişim değildir. Marka bağlantısı doğrulanana kadar ürün spesifikasyonuna girmez.</p>
+<h2>Kaynak</h2>
+<p class="limit"><span class="tag">Sınırlılıklar</span> Klinik etkililik sonucu bulunmayan bir tezgâh çalışması. Örnek çıkışı, tamamlanmış cihazın kullanım sırasındaki davranışı değildir. Adı belirli marka ve modelin gösterilip gösterilmediği kontrol edilmedi ve marka bağlantısı kurulmadı. Reaksiyon oranları ve üretim adımları eklenmedi.</p>
+<div class="source">Kaynak: Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim. Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots. Soft Robotics, OnlineFirst, 2026. DOI: <a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">10.1177/21695172261442062</a>.</div>
+<h2>İlgili okumalar</h2>
+<ul class="related">
+<li><a href="sup06.html">Ek 06 · Sağlıklı yetişkinlerde arayüz uygulanabilirliği, tedavi sonucu değil</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>Klinik araştırmamıza katılın</h2><p>Bu köşe rehabilitasyon terapistleri, klinisyenler, klinikler ve hastane birimleri içindir. Bir araştırma sorusunu veya Syrebo ile olası bir klinik araştırma iş birliğini görüşmek isteyenler bizimle iletişime geçebilir. Bir çalışmanın yürütülmesi etik incelemeye ve tarafların anlaşmasına bağlıdır.</p><p>Bir makaledeki skor, ürünün etkisi değildir; bu sayfa diğer markaları sıralamaz.</p><p><a class="btn" href="join.html">Nasıl katılabilirsiniz?</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">İletişim sayfası</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<div class="tip">Not: Rehabilitasyon sonuçları kişiden kişiye değişir. Lütfen hekiminizin veya terapistinizin belirlediği egzersiz planını uygulayın.</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo Klinik Araştırma Köşesi<br/>Bu içerik yayımlanmış çalışmalardan yalnızca rehabilitasyon eğitimi için derlenmiştir ve tıbbi tavsiye değildir.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">İletişim sayfası</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">Klinik araştırmamıza katılın</a></p></div>
+</div>
+</body>
+</html>
