@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="lt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Pneumatinis šaltinis be elektronikos: slėgis, srautas, temperatūra ir triukšmas bandymų stende</title>
+<meta content="Inžineriniame straipsnyje nagrinėjamas minkštųjų robotų pneumatinis šaltinis. Santraukoje pateikiami stende matuoti slėgis, srautas, temperatūra ir triukšmas. Tai nėra klinikiniai rezultatai ar „Syrebo“ produkto specifikacijos." name="description"/>
+<meta content="pneumatinis šaltinis, minkštas robotas, bandymų stendas, mažas triukšmas, inžinerinis tyrimas" name="keywords"/>
+<style>
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
+.header .sub{font-size:13px;color:#5a6c80}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a,.related a{color:#0050A0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
+</style>
+<!-- seo:start -->
+<link href="https://gavin262.github.io/syrebo-clinical-column/lt/sup07.html" rel="canonical"/>
+<meta content="index,follow" name="robots"/>
+<meta content="article" property="og:type"/>
+<meta content="„Syrebo“ klinikinių tyrimų rubrika" property="og:site_name"/>
+<meta content="Pneumatinis šaltinis be elektronikos: slėgis, srautas, temperatūra ir triukšmas bandymų stende" property="og:title"/>
+<meta content="Inžineriniame straipsnyje nagrinėjamas minkštųjų robotų pneumatinis šaltinis. Santraukoje pateikiami stende matuoti slėgis, srautas, temperatūra ir triukšmas. Tai nėra klinikiniai rezultatai ar „Syrebo“ produkto specifikacijos." property="og:description"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/lt/sup07.html" property="og:url"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png" property="og:image"/>
+<meta content="lt" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Pneumatinis šaltinis be elektronikos: slėgis, srautas, temperatūra ir triukšmas bandymų stende" name="twitter:title"/>
+<meta content="Inžineriniame straipsnyje nagrinėjamas minkštųjų robotų pneumatinis šaltinis. Santraukoje pateikiami stende matuoti slėgis, srautas, temperatūra ir triukšmas. Tai nėra klinikiniai rezultatai ar „Syrebo“ produkto specifikacijos." name="twitter:description"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png" name="twitter:image"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html" hreflang="en" rel="alternate"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/zh/sup07.html" hreflang="zh-CN" rel="alternate"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Pneumatinis šaltinis be elektronikos: slėgis, srautas, temperatūra ir triukšmas bandymų stende","description":"Inžineriniame straipsnyje nagrinėjamas minkštųjų robotų pneumatinis šaltinis. Santraukoje pateikiami stende matuoti slėgis, srautas, temperatūra ir triukšmas. Tai nėra klinikiniai rezultatai ar „Syrebo“ produkto specifikacijos.","inLanguage":"lt","url":"https://gavin262.github.io/syrebo-clinical-column/lt/sup07.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","url":"https://doi.org/10.1177/21695172261442062","name":"Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","sameAs":"https://doi.org/10.1177/21695172261442062"}}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img alt="Syrebo" src="../assets/logo_official.png"/></a><div><div class="col">„Syrebo“ klinikinių tyrimų rubrika</div><div class="sub">Įrodymais pagrįstos robotinių pirštinių reabilitacijos tyrimų apžvalgos</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
+<div class="nav"><a href="../index.html">Rubrikos pradžia</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="join.html">Tyrimai</a></div>
+<div class="wrap">
+<div class="issue">Papildomas tyrimas 07</div>
+<h1 class="en">Pneumatinis šaltinis be elektronikos: slėgis, srautas, temperatūra ir triukšmas bandymų stende</h1>
+<section class="paper"><p class="pk">Iš straipsnio</p><div class="pm"><p class="pt">Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots</p><p class="pa">Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim</p><p class="pv">Soft Robotics, OnlineFirst, 2026</p><p class="pi">DOI: 10.1177/21695172261442062</p><p class="pi"><a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">Žiūrėti šaltinį</a></p><p class="pi">Straipsnio iliustracijų pakartotinis naudojimas nepatvirtintas; šiame puslapyje jos neatkuriamos.</p></div></section>
+<p>Straipsnyje siūlomas minkšto roboto aprūpinimo dujomis būdas: integruota endoterminė ir egzoterminė reakcija be elektroninių dalių, reguliuojama pasyviais mechaniniais komponentais, kurie reaguoja į sistemos būseną. Santraukoje nurodomas pastovus 7 bar slėgis ir 6 L/min srautas, didžiausia 36°C temperatūra ir 40 dBA triukšmas. Nagrinėjamas dujų šaltinis, o ne rankos funkcija; tai nėra įrodymas, kad reabilitacijos produktas veikia. Viešai peržiūrėtoje santraukoje „Syrebo“ produktas nenurodomas; nepatikrinta, ar visame tekste demonstruojamas konkretus prekės ženklas ar modelis.</p>
+<h2>Kontekstas</h2>
+<p>Minkšta konstrukcija juda gavusi dujų. Siurblio dydis, šiluma, triukšmas ir valdymo elektronika riboja erdvę, kurioje prietaisas gali būti naudojamas. Kitas dujų tiekimo būdas yra inžinerinis klausimas.</p>
+<p>Bandymų stende išmatuotas slėgis ir decibelai apibūdina šaltinio pavyzdį. Viso prietaiso veikimas žmogui jį naudojant yra kitoks bandymas. Šiame puslapyje pateikiami santraukos veikimo duomenys ir nepridedami gamybos žingsniai.</p>
+<p>Minkšta konstrukcija keičia formą gavusi dujų. Siurblio dydis, šiluma, triukšmas ir elektronika veikia erdvę, kurioje prietaisas gali būti naudojamas. Kitas dujų tiekimo būdas parodo šaltinio pavyzdžio veikimą stende: slėgį, srautą, temperatūrą ir garsą. Tai neatsako apie rankos įvertį ar treniruotės saugumą.</p>
+<h2>Tyrimo apžvalga</h2>
+<p>Santraukoje aprašomos dujos, susidarančios reaguojant fosforo rūgščiai ir cezio bikarbonatui; endoterminiai ir egzoterminiai procesai derinami šilumai riboti. Pasyvios mechaninės dalys reguliuoja reakciją keičiantis sistemos būsenai. Elektroninio valdiklio nėra. Matuojama išvestis, temperatūra ir triukšmas. Produkto nuotrauka nerodoma.</p>
+<p>Santraukoje aprašyta sistema generuoja dujas iš fosforo rūgšties ir cezio bikarbonato, šilumai riboti derina endoterminius bei egzoterminius procesus ir naudoja pasyvias mechanines dalis, kurios reaguoja į sistemos būseną. Elektroninio valdiklio nėra. Matavimai taikomi tik šaltinio pavyzdžiui. Puslapyje nepridedami gamybos žingsniai ir nerodoma produkto nuotrauka. Nepatikrinta, ar visame tekste demonstruojamas konkretus reabilitacijos prietaisas.</p>
+<p class="scan"><span class="tag">Tyrimo planas</span></p>
+<p>Pneumatinio šaltinio tyrimas bandymų stende. Viešai peržiūrėtoje santraukoje neaprašomi pacientai, rankos funkcijos rezultatai ar gydymo kursas.</p>
+<p class="scan"><span class="tag">Dalyviai ir tvarkaraštis</span></p>
+<p>Santraukoje pateikiami eksperimentinio šaltinio matavimai, o ne pacientų grupės rezultatai.</p>
+<p class="scan"><span class="tag">Pagrindiniai rezultatai</span></p>
+<p>Santraukoje nurodomas pastovus 7 bar slėgis, 6 L/min srautas, didžiausia 36°C temperatūra ir 40 dBA triukšmas. Šie skaičiai apibūdina išbandytą šaltinį autorių nurodytomis sąlygomis; tai nėra „Syrebo“ produkto specifikacijos. Tai nėra klinikinės saugos išvada ar rankos funkcijos pokytis.</p>
+<h2>Ką papildo šis tyrimas</h2>
+<p>Aptariant minkštą reabilitacijos įrangą, straipsnyje pateikiama tiekimo idėja, kuri nėra įprastas siurblys. Sąsaja su konkrečiu produktu priklauso nuo to, ar jis parodytas visame tekste. Iki patikros tai lieka straipsniu apie dujų šaltinį, o ne produkto specifikacija.</p>
+<p>Aptariant įrangą straipsnis pateikia vieną inžinerinę idėją: tiekimo šaltinį, kuris nėra įprastas siurblys. Stendo matavimai nėra klinikinio saugumo pažadas ar rankos funkcijos pokytis. Kol sąsaja su prekės ženklu nepatvirtinta, jie neįtraukiami į produkto specifikaciją.</p>
+<h2>Šaltinis</h2>
+<p class="limit"><span class="tag">Ribotumai</span> Bandymų stendo tyrimas be klinikinio veiksmingumo išvados. Pavyzdžio išvestis nėra baigto prietaiso veikimas naudojimo metu. Nepatikrinta, ar parodytas konkretus prekės ženklas ir modelis, todėl sąsaja su prekės ženklu nenustatoma. Reakcijos santykiai ir gamybos žingsniai nepridedami.</p>
+<div class="source">Šaltinis: Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim. Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots. Soft Robotics, OnlineFirst, 2026. DOI: <a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">10.1177/21695172261442062</a>.</div>
+<h2>Susiję straipsniai</h2>
+<ul class="related">
+<li><a href="sup06.html">Papildomas tyrimas 06 · Sąsajos galimumas sveikiems suaugusiesiems, ne gydymo rezultatas</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>Dalyvaukite klinikiniuose tyrimuose</h2><p>Ši rubrika skirta reabilitacijos terapeutams, klinikoms ir ligoninių skyriams. Norinčius aptarti tyrimo klausimą ar galimą bendradarbiavimą su „Syrebo“ klinikinių tyrimų srityje kviečiame susisiekti. Tyrimo vykdymas priklauso nuo etikos vertinimo ir šalių susitarimo.</p><p>Vieno straipsnio rezultatas nėra produkto poveikis, o šiame puslapyje kiti prekių ženklai neranguojami.</p><p><a class="btn" href="join.html">Kaip dalyvauti</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Kontaktų puslapis</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<div class="tip">Pastaba: reabilitacijos rezultatai kiekvienam žmogui skiriasi. Laikykitės gydytojo ar terapeuto sudaryto treniruočių plano.</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · „Syrebo“ klinikinių tyrimų rubrika<br/>Šis turinys parengtas pagal paskelbtus tyrimus tik reabilitacijos švietimo tikslais ir nėra medicininė konsultacija.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Kontaktų puslapis</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">Dalyvaukite klinikiniuose tyrimuose</a></p></div>
+</div>
+</body>
+</html>
