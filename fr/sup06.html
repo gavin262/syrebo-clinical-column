@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>L’échographie en mode amplitude comme interface pour un exosquelette souple de la main : cinq adultes en bonne santé</title>
+<meta content="Une communication scientifique en ingénierie étudie les signaux ultrasonores pendant sept tâches de préhension chez cinq adultes en bonne santé. Elle n’établit pas de résultat thérapeutique chez des patients ; la marque et le modèle du dispositif restent à vérifier." name="description"/>
+<meta content="interface homme-machine, ultrasons, exosquelette souple, intention de préhension, faisabilité technique" name="keywords"/>
+<style>
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
+.header .sub{font-size:13px;color:#5a6c80}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a,.related a{color:#0050A0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
+</style>
+<!-- seo:start -->
+<link href="https://gavin262.github.io/syrebo-clinical-column/fr/sup06.html" rel="canonical"/>
+<meta content="index,follow" name="robots"/>
+<meta content="article" property="og:type"/>
+<meta content="Chronique de recherche clinique Syrebo" property="og:site_name"/>
+<meta content="L’échographie en mode amplitude comme interface pour un exosquelette souple de la main : cinq adultes en bonne santé" property="og:title"/>
+<meta content="Une communication scientifique en ingénierie étudie les signaux ultrasonores pendant sept tâches de préhension chez cinq adultes en bonne santé. Elle n’établit pas de résultat thérapeutique chez des patients ; la marque et le modèle du dispositif restent à vérifier." property="og:description"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/fr/sup06.html" property="og:url"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png" property="og:image"/>
+<meta content="fr_FR" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="L’échographie en mode amplitude comme interface pour un exosquelette souple de la main : cinq adultes en bonne santé" name="twitter:title"/>
+<meta content="Une communication scientifique en ingénierie étudie les signaux ultrasonores pendant sept tâches de préhension chez cinq adultes en bonne santé. Elle n’établit pas de résultat thérapeutique chez des patients ; la marque et le modèle du dispositif restent à vérifier." name="twitter:description"/>
+<meta content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png" name="twitter:image"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/en/sup06.html" hreflang="en" rel="alternate"/><link href="https://gavin262.github.io/syrebo-clinical-column/fr/sup06.html" hreflang="fr" rel="alternate"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/zh/sup06.html" hreflang="zh-CN" rel="alternate"/>
+<link href="https://gavin262.github.io/syrebo-clinical-column/en/sup06.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"L’échographie en mode amplitude comme interface pour un exosquelette souple de la main : cinq adultes en bonne santé","description":"Une communication scientifique en ingénierie étudie les signaux ultrasonores pendant sept tâches de préhension chez cinq adultes en bonne santé. Elle n’établit pas de résultat thérapeutique chez des patients ; la marque et le modèle du dispositif restent à vérifier.","inLanguage":"fr","url":"https://gavin262.github.io/syrebo-clinical-column/fr/sup06.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1109/BIOROB66782.2026.11681602","url":"https://doi.org/10.1109/BIOROB66782.2026.11681602","name":"Ultrasound-Based Human–Machine Interfacing for Soft Hand Exoskeletons under Assisted and Passive Conditions"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1109/BIOROB66782.2026.11681602","sameAs":"https://doi.org/10.1109/BIOROB66782.2026.11681602"}}</script>
+<!-- seo:end -->
+</head>
+<body>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img alt="Syrebo" src="../assets/logo_official.png"/></a><div><div class="col">Chronique de recherche clinique Syrebo</div><div class="sub">Regards documentés sur la recherche en rééducation avec des gants robotisés</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
+<div class="nav"><a href="../index.html">Accueil de la chronique</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="join.html">Recherche</a></div>
+<div class="wrap">
+<div class="issue">Complément 06</div>
+<h1 class="en">L’échographie en mode amplitude comme interface pour un exosquelette souple de la main : cinq adultes en bonne santé</h1>
+<section class="paper"><p class="pk">À propos de l’article</p><div class="pm"><p class="pt">Ultrasound-Based Human–Machine Interfacing for Soft Hand Exoskeletons under Assisted and Passive Conditions</p><p class="pa">Bruno Grandi Sgambato, Juan C. Maldonado-Mejía, Tristan Wen Jie Choo, Marcela Múnera, Camilo A. R. Díaz, Majid Taghavi, Dario Farina, Carlos A. Cifuentes</p><p class="pv">2026 11th IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics, pp. 495–500</p><p class="pi">DOI: 10.1109/BIOROB66782.2026.11681602</p><p class="pi"><a href="https://doi.org/10.1109/BIOROB66782.2026.11681602" rel="noopener noreferrer">Consulter la source</a></p><p class="pi">Figures de l’article : leur réutilisation n’a pas été confirmée ; aucune n’est reproduite sur cette page.</p></div></section>
+<p>L’étude cherche à savoir si les signaux échographiques en mode amplitude permettent de distinguer différents types de préhension dans des conditions impliquant un exosquelette souple de la main. Le dépôt institutionnel des auteurs et le programme de la conférence décrivent cinq adultes en bonne santé réalisant sept prises inspirées d’un protocole d’évaluation standardisé. Il s’agit d’une étude technique, qui ne démontre pas de résultats thérapeutiques chez des personnes après un AVC. L’article intégral n’a pas été examiné ; la marque et le modèle de l’exosquelette restent à vérifier.</p>
+<h2>Contexte</h2>
+<p>L’électromyographie de surface est une méthode connue pour capter l’intention de mouvement. L’échographie en mode amplitude offre une autre voie : les échos de l’avant-bras servent à déduire l’état musculaire. Pour un exosquelette souple, la question est de savoir si l’interface distingue les motifs associés aux prises de la main.</p>
+<p>Lorsque des adultes en bonne santé effectuent des prises prescrites en laboratoire, cela montre qu’une procédure peut être réalisée. Cela ne démontre ni la même stabilité dans la vie quotidienne, ni l’utilisation d’une marque de gant particulière dans l’expérience.</p>
+<p>Un exosquelette souple destiné à suivre l’intention a besoin d’un signal indiquant ce que la main s’apprête à faire. L’électromyographie de surface est une option connue. L’échographie en mode amplitude analyse plutôt les échos de l’avant-bras. Pour un service de rééducation, la question reste de savoir si une interface peut reconnaître des prises prescrites ; elle ne porte pas sur la fonction après une période de soins.</p>
+<h2>Présentation de l’étude</h2>
+<p>L’article étudie les signaux échographiques en mode amplitude et un exosquelette souple de la main dans quatre conditions : mouvement volontaire sans dispositif, mouvement passif entraîné par le dispositif, mouvement volontaire sans actionnement et mouvement volontaire assisté par actionnement. Cinq adultes en bonne santé ont effectué sept tâches de préhension. Les résumés de la conférence et du dépôt institutionnel rapportent des résultats de classification, mais la procédure complète de validation, la marque et le modèle du dispositif restent à examiner. Cette page ne présente pas de photographie de produit.</p>
+<p>Les participants étaient cinq adultes en bonne santé. Les sept tâches de préhension étaient inspirées d’un protocole d’évaluation standardisé. Les résumés publics rapportent des résultats de classification dans plusieurs conditions, mais la procédure complète de validation croisée ainsi que la marque et le modèle de l’exosquelette restent à vérifier. Cette page ne présente pas de photo de produit et ne reprend pas de résultats d’autres articles sur les ultrasons.</p>
+<p class="scan"><span class="tag">Plan de l’étude</span></p>
+<p>Une expérience d’ingénierie sur une interface homme-machine comparant la détection par ultrasons de l’intention de préhension dans des conditions actives et passives. Ce n’est pas un essai thérapeutique randomisé et elle ne compare pas d’échelles fonctionnelles au cours d’un traitement.</p>
+<p class="scan"><span class="tag">Participants et déroulement</span></p>
+<p>Cinq adultes en bonne santé et sept prises. Aucun groupe de patients n’a été étudié ; il n’y a donc pas de traitement à décrire.</p>
+<p class="scan"><span class="tag">Principaux résultats</span></p>
+<p>Les résumés institutionnel et de conférence rapportent une meilleure classification des types de préhension en présence d’une activation musculaire volontaire que pendant le mouvement passif seul. Ces résultats préliminaires proviennent de cinq participants en bonne santé et n’établissent pas de résultats thérapeutiques. Les méthodes détaillées et les chiffres définitifs de performance nécessitent encore l’examen du texte intégral.</p>
+<h2>Ce que cette étude apporte</h2>
+<p>L’échographie en mode amplitude est une voie de détection de l’intention distincte de l’électromyographie de surface. Ici, son intérêt se limite à la faisabilité de l’interface. Le passage de volontaires en bonne santé à un usage quotidien nécessite encore des travaux sur l’utilisabilité, la stabilité et la sécurité. Tant qu’une marque n’est pas identifiée dans les méthodes, l’étude n’est pas comptée comme une expérience sur un produit précis.</p>
+<p>Du point de vue technique, l’étude présente une voie de détection de l’intention distincte de l’électromyographie de surface, à l’échelle de cinq adultes en bonne santé et de sept prises. L’utilisation quotidienne exige une analyse distincte de l’utilisabilité, de la stabilité et de la sécurité. Tant que les méthodes ne nomment pas de marque, l’étude ne figure pas parmi les preuves d’un produit.</p>
+<h2>Source</h2>
+<p class="limit"><span class="tag">Limites</span> Cinq adultes en bonne santé seulement. Ce n’est pas une preuve de résultat chez des patients. Le texte intégral n’était pas disponible pour examen ; la marque, le modèle, la méthode complète de validation et les chiffres définitifs de performance restent à vérifier. L’étude n’est pas comptée comme une expérimentation confirmée d’un dispositif identifié. Les taux de reconnaissance d’autres articles ne sont pas repris ici.</p>
+<div class="source">Source : Bruno Grandi Sgambato, Juan C. Maldonado-Mejía, Tristan Wen Jie Choo, Marcela Múnera, Camilo A. R. Díaz, Majid Taghavi, Dario Farina, Carlos A. Cifuentes. Ultrasound-Based Human–Machine Interfacing for Soft Hand Exoskeletons under Assisted and Passive Conditions. 2026 11th IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics, pp. 495–500. DOI: <a href="https://doi.org/10.1109/BIOROB66782.2026.11681602" rel="noopener noreferrer">10.1109/BIOROB66782.2026.11681602</a>.</div>
+<h2>À lire également</h2>
+<ul class="related">
+<li><a href="sup07.html">Complément 07 · Une autre étude sur banc : une source de gaz, pas la fonction de la main</a></li>
+<li><a href="sup05.html">Complément 05 · Activation pendant une tâche, et non essai d’efficacité</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>Participer à nos recherches cliniques</h2><p>Cette chronique s’adresse aux professionnels de la rééducation, aux cliniques et aux services hospitaliers. Si vous souhaitez discuter d’une question de recherche ou d’une collaboration clinique avec Syrebo, contactez-nous. La réalisation d’une étude dépend d’un examen éthique et d’un accord entre les parties.</p><p>Un score rapporté dans une étude ne constitue pas un effet attribuable à un produit. Cette page ne classe pas les autres marques.</p><p><a class="btn" href="join.html">Comment participer</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Nous contacter</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<div class="tip">Remarque : les résultats de la rééducation varient selon les personnes. Suivez le programme prescrit par votre médecin ou votre thérapeute.</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Chronique de recherche clinique Syrebo<br/>Ce contenu, établi à partir d’études publiées, est destiné à l’information sur la rééducation et ne constitue pas un avis médical.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Nous contacter</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">Participer à nos recherches cliniques</a></p></div>
+</div>
+</body>
+</html>
+
