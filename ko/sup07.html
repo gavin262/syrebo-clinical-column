@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>전자 부품 없는 공압 공급원: 실험대에서 측정한 압력·유량·온도·소음</title>
+<meta name="description" content="공학 논문에서 소프트 로봇용 공압 공급원을 살펴봅니다. 초록은 실험대에서 측정한 압력, 유량, 온도와 소음을 보고합니다. 이는 임상 결과나 Syrebo 제품 사양이 아닙니다.">
+<meta name="keywords" content="공압 공급원, 소프트 로봇, 실험대 시험, 저소음, 공학 연구">
+<style>
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
+.header .sub{font-size:13px;color:#5a6c80}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a,.related a{color:#0050A0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/ko/sup07.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo 임상 연구 칼럼">
+<meta property="og:title" content="전자 부품 없는 공압 공급원: 실험대에서 측정한 압력·유량·온도·소음">
+<meta property="og:description" content="공학 논문에서 소프트 로봇용 공압 공급원을 살펴봅니다. 초록은 실험대에서 측정한 압력, 유량, 온도와 소음을 보고합니다. 이는 임상 결과나 Syrebo 제품 사양이 아닙니다.">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="전자 부품 없는 공압 공급원: 실험대에서 측정한 압력·유량·온도·소음">
+<meta name="twitter:description" content="공학 논문에서 소프트 로봇용 공압 공급원을 살펴봅니다. 초록은 실험대에서 측정한 압력, 유량, 온도와 소음을 보고합니다. 이는 임상 결과나 Syrebo 제품 사양이 아닙니다.">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html">
+<link rel="alternate" hreflang="ko" href="https://gavin262.github.io/syrebo-clinical-column/ko/sup07.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup07.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"전자 부품 없는 공압 공급원: 실험대에서 측정한 압력·유량·온도·소음","description":"공학 논문에서 소프트 로봇용 공압 공급원을 살펴봅니다. 초록은 실험대에서 측정한 압력, 유량, 온도와 소음을 보고합니다. 이는 임상 결과나 Syrebo 제품 사양이 아닙니다.","inLanguage":"ko","url":"https://gavin262.github.io/syrebo-clinical-column/ko/sup07.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","url":"https://doi.org/10.1177/21695172261442062","name":"Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","sameAs":"https://doi.org/10.1177/21695172261442062"}}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="Syrebo"></a><div><div class="col">Syrebo 임상 연구 칼럼</div><div class="sub">로봇 장갑 재활 연구를 근거에 따라 살펴봅니다</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
+<div class="nav"><a href="../index.html">칼럼 홈</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="join.html">연구 협력</a></div>
+<div class="wrap">
+<div class="issue">Supplement 07</div>
+<h1 class="ko">전자 부품 없는 공압 공급원: 실험대에서 측정한 압력·유량·온도·소음</h1>
+<section class="paper"><p class="pk">논문 정보</p><div class="pm"><p class="pt">Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots</p><p class="pa">Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim</p><p class="pv">Soft Robotics, OnlineFirst, 2026</p><p class="pi">DOI: 10.1177/21695172261442062</p><p class="pi"><a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">원문 보기</a></p><p class="pi">논문 그림의 재사용 여부가 확인되지 않아 이 페이지에는 수록하지 않았습니다.</p></div></section>
+
+<p>논문은 전자 부품 없이 흡열·발열 반응을 결합하고 시스템 상태에 따라 작동하는 수동 기계 부품으로 조절해 소프트 로봇에 기체를 공급하는 방법을 제안합니다. 초록은 안정 출력 7 bar와 6 L/min, 최고 온도 36°C, 소음 40 dBA를 보고합니다. 대상은 기체 공급원이지 손 기능이 아니며 재활 제품의 효과가 입증됐다는 주장도 아닙니다. 공개 초록은 Syrebo 제품을 명시하지 않으며 전문에 특정 브랜드나 모델이 제시됐는지는 미확인입니다.</p>
+<h2>연구 배경</h2>
+<p>소프트 구조물은 기체를 공급받으면 움직입니다. 펌프의 크기, 열, 소음과 제어 전자 부품은 기기가 들어갈 수 있는 공간을 제한합니다. 다른 기체 공급 방법을 찾는 것은 공학적 질문입니다.</p>
+<p>실험대에서 측정한 압력과 데시벨은 공급원 시료를 설명합니다. 사람이 사용하는 완제품의 작동은 별도의 시험입니다. 이 페이지는 초록의 성능 설명을 옮기며 제작 단계를 추가하지 않습니다.</p>
+<p>소프트 구조물은 기체가 들어오면 모양이 변합니다. 펌프의 크기, 열, 소음과 전자 부품은 기기가 차지하는 공간에 영향을 줍니다. 다른 공급 방법의 실험대 측정은 시료의 압력, 유량, 온도와 소리를 보여 줍니다. 손 기능 점수나 한 차례 훈련의 안전성에 대한 답은 아닙니다.</p>
+<h2>연구 개요</h2>
+<p>초록은 인산과 중탄산세슘의 반응으로 기체를 만들고 열을 제한하기 위해 흡열·발열 과정을 결합한 방식을 설명합니다. 수동 기계 부품은 시스템 상태가 바뀜에 따라 반응을 조절합니다. 전자 제어기는 없습니다. 출력, 온도와 소음을 측정했습니다. 이 페이지에는 제품 사진을 싣지 않았습니다.</p>
+<p>초록의 시스템은 인산과 중탄산세슘으로 기체를 만들고 열을 제한하기 위해 흡열·발열 과정을 결합하며 시스템 상태에 따라 작동하는 수동 기계 부품을 사용합니다. 전자 제어기는 없습니다. 측정치는 공급원 시료에만 해당합니다. 제작 단계나 제품 사진을 추가하지 않았습니다. 전문에서 특정 재활 기기를 제시하는지는 확인되지 않았습니다.</p>
+<p class="scan"><span class="tag">연구 설계</span></p>
+<p>공압 공급원에 대한 실험대 연구입니다. 공개 초록은 환자, 손 기능 결과나 치료 과정을 설명하지 않습니다.</p>
+<p class="scan"><span class="tag">대상과 일정</span></p>
+<p>초록은 환자군의 결과가 아니라 실험용 공급원의 측정치를 보고합니다.</p>
+<p class="scan"><span class="tag">주요 결과</span></p>
+<p>초록은 안정 압력 7 bar, 안정 유량 6 L/min, 최고 온도 36°C, 소음 40 dBA를 보고합니다. 이 수치는 저자들이 보고한 조건에서 시험한 공급원을 설명하며 Syrebo 제품 사양이 아닙니다. 임상 안전성의 결론이나 손 기능 변화도 아닙니다.</p>
+<h2>이 연구의 의미</h2>
+<p>소프트 재활 장치에 관한 논의에서 이 논문은 기존 펌프와 다른 공급 아이디어입니다. 특정 제품과의 연결은 전문에서 그 제품을 제시하는지에 달려 있습니다. 확인 전까지는 기체 공급원 논문이지 제품 사양이 아닙니다.</p>
+<p>장치 논의에서 이 논문은 기존 펌프와 다른 공급 아이디어라는 공학적 단서를 제공합니다. 실험대 측정치는 임상 안전성에 대한 약속이나 손 기능 변화가 아닙니다. 브랜드와의 연결을 검증하기 전에는 제품 사양으로 사용할 수 없습니다.</p>
+<h2>출처</h2>
+<p class="limit"><span class="tag">한계</span> 임상 효능 결론이 없는 실험대 연구입니다. 시료의 출력은 완제품을 사용하는 동안의 작동과 다릅니다. 특정 브랜드와 모델이 제시됐는지 확인하지 못해 브랜드와 연결하지 않습니다. 반응 비율과 제작 단계는 추가하지 않았습니다.</p>
+<div class="source">출처: Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim. Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots. Soft Robotics, OnlineFirst, 2026. DOI: <a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">10.1177/21695172261442062</a>.</div>
+<h2>관련 글</h2>
+<ul class="related">
+<li><a href="sup06.html">추가 연구 06 · 치료 결과가 아닌 건강한 성인의 인터페이스 실행 가능성</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>임상 연구에 참여하기</h2><p>이 칼럼은 재활 치료사, 병의원과 병원 부서를 위한 자료입니다. 연구 질문이나 Syrebo와의 임상 연구 협력을 논의하고 싶으시면 문의해 주세요. 연구 진행은 윤리 심의와 당사자 간 합의에 따릅니다.</p><p>한 논문의 점수는 제품 효과를 뜻하지 않으며, 이 페이지는 다른 브랜드의 순위를 매기지 않습니다.</p><p><a class="btn" href="join.html">참여 방법</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">문의하기</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<div class="tip">안내: 재활 결과는 개인마다 다릅니다. 의사나 치료사가 정한 훈련 계획을 따르세요.</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo 임상 연구 칼럼<br>이 글은 공개된 연구를 바탕으로 재활 정보를 제공하며 의학적 조언을 대신하지 않습니다.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">문의하기</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="join.html">임상 연구 협력</a></p></div>
+</div>
+</body>
+</html>
