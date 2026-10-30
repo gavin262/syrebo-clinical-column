@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pneumatski izvor bez elektronike: tlak, protok, temperatura i buka na ispitnom stolu</title>
+<meta name="description" content="Inženjerski rad ispituje pneumatski izvor za meke robote. Sažetak navodi mjerenja tlaka, protoka, temperature i buke na ispitnom stolu. To nisu klinički nalazi ni specifikacije proizvoda Syrebo.">
+<meta name="keywords" content="pneumatski izvor, meki robot, laboratorijski test, niska buka, inženjersko istraživanje">
+<style>
+/* column-shell */
+body{font-family:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif;margin:0;background:#f7f8fa;color:#1c2836}
+.header{background:#fff;border-bottom:3px solid #0050A0;padding:16px 24px;display:flex;align-items:center;gap:16px}
+.header .brand{display:flex;line-height:0}
+.header img{height:42px}
+.header .col{font-size:20px;font-weight:700;color:#0a2540}
+.header .sub{font-size:13px;color:#5a6c80}
+.official{margin-left:auto;color:#0050A0;font-weight:700;text-decoration:none;font-size:14px;white-space:nowrap}
+.official:hover{text-decoration:underline}
+.nav{background:#fff;color:#17324a;padding:10px 24px;font-size:14px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;border-bottom:1px solid #e2e8f0}
+.nav a{color:#17324a;text-decoration:none;margin:0}
+.nav a:hover{color:#0050A0}
+.wrap{max-width:800px;margin:0 auto;padding:28px 22px 48px;background:#fff;box-shadow:0 8px 28px rgba(10,37,64,.06)}
+.issue{color:#0050A0;font-weight:700;letter-spacing:.04em;font-size:13px}
+h1{color:#0a2540;font-size:30px;line-height:1.35;margin:10px 0 6px}
+h1.en{font-size:28px}
+h2{color:#0a2540;font-size:21px;border-left:5px solid #0050A0;padding-left:10px;margin:28px 0 10px}
+p{font-size:17px;line-height:1.85;margin:12px 0}
+img.cover,img.product{width:100%;border-radius:10px;margin:14px 0}
+.cap{font-size:13px;color:#5a6c80;margin:-6px 0 18px}
+.source{background:#eef6fc;border-left:5px solid #0050A0;padding:14px 16px;font-size:15px;line-height:1.7;margin:26px 0}
+.tip{background:#f7f8fa;border:1px solid #e2e8f0;padding:14px 16px;font-size:15px;line-height:1.7;border-radius:12px}
+.footer{border-top:1px solid #e2e8f0;margin-top:36px;padding-top:16px;font-size:13px;color:#5a6c80;text-align:center;line-height:1.7}
+.footer a{color:#0050A0;text-decoration:none;font-weight:600}
+.footer a:hover{text-decoration:underline}
+.poster{width:100%;max-width:720px;display:block;margin:18px auto;border-radius:10px;box-shadow:0 4px 24px rgba(10,37,64,.12)}
+.btn{display:inline-block;background:#0050A0;color:#fff;padding:10px 20px;border-radius:999px;text-decoration:none;margin:6px 8px 6px 0;font-weight:600;font-size:15px;line-height:1.2;border:1px solid #0050A0}
+.btn:hover{background:#00356b;border-color:#00356b;color:#fff}
+.btn-line{background:#fff;color:#0050A0}
+.btn-line:hover{background:#eef6fc;color:#0050A0}
+.hero{max-width:1206px;margin:0 auto}
+.hero img{width:100%;display:block}
+p.limit{font-size:13.5px;color:#526478;line-height:1.65}
+.source a,.related a{color:#0050A0;font-weight:600}
+.paper{border:1px solid #d3deec;border-radius:12px;overflow:hidden;margin:14px 0 18px;background:#fff}
+.paper .pk{margin:0;background:#0050A0;color:#fff;font-size:14px;letter-spacing:.04em;padding:9px 16px;font-weight:700}
+.paper .pm{padding:14px 16px 12px}
+.paper .pt{font-size:17px;line-height:1.45;color:#0a2540;font-weight:700;margin:0 0 8px}
+.paper .pa{font-size:14.5px;line-height:1.55;color:#1c2836;margin:0}
+.paper .pv{font-size:14px;color:#5a6c80;margin:4px 0 0}
+.paper .pi{font-size:13px;color:#5a6c80;margin:4px 0 0}
+.paper figure{margin:0 16px 14px}
+.paper figure img{width:100%;height:auto;border-radius:8px;border:1px solid #d3deec;display:block}
+.paper figcaption{font-size:13px;color:#5a6c80;line-height:1.55;margin-top:6px}
+.paper figcaption a,.paper .pi a{color:#0050A0;font-weight:600}
+p.scan{margin:18px 0 0}span.tag{display:inline-block;background:#0050A0;color:#fff;font-size:13px;font-weight:700;line-height:1.2;padding:6px 12px;border-radius:4px;vertical-align:middle}
+.cta{background:#eef6fc;border:1px solid #c9dcec;border-radius:16px;padding:8px 20px 16px;margin:28px 0}
+.cta h2{margin-top:16px}
+ul.related{margin:8px 0 18px;padding-left:1.2em}
+ul.related li{margin:6px 0;line-height:1.6}
+.who{margin:8px 0 16px;padding-left:1.2em}
+.who li{margin:4px 0}
+
+</style>
+<!-- seo:start -->
+<link rel="canonical" href="https://gavin262.github.io/syrebo-clinical-column/hr/sup07.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Syrebo rubrika o kliničkim istraživanjima">
+<meta property="og:title" content="Pneumatski izvor bez elektronike: tlak, protok, temperatura i buka na ispitnom stolu">
+<meta property="og:description" content="Inženjerski rad ispituje pneumatski izvor za meke robote. Sažetak navodi mjerenja tlaka, protoka, temperature i buke na ispitnom stolu. To nisu klinički nalazi ni specifikacije proizvoda Syrebo.">
+<meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/hr/sup07.html">
+<meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pneumatski izvor bez elektronike: tlak, protok, temperatura i buka na ispitnom stolu">
+<meta name="twitter:description" content="Inženjerski rad ispituje pneumatski izvor za meke robote. Sažetak navodi mjerenja tlaka, protoka, temperature i buke na ispitnom stolu. To nisu klinički nalazi ni specifikacije proizvoda Syrebo.">
+<meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png">
+<link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html">
+<link rel="alternate" hreflang="hr" href="https://gavin262.github.io/syrebo-clinical-column/hr/sup07.html">
+<link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/sup07.html">
+<link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/sup07.html">
+<link rel="alternate" hreflang="es" href="https://gavin262.github.io/syrebo-clinical-column/es/sup07.html">
+<link rel="alternate" hreflang="fr" href="https://gavin262.github.io/syrebo-clinical-column/fr/sup07.html">
+<link rel="alternate" hreflang="hi" href="https://gavin262.github.io/syrebo-clinical-column/hi/sup07.html">
+<link rel="alternate" hreflang="id" href="https://gavin262.github.io/syrebo-clinical-column/id/sup07.html">
+<link rel="alternate" hreflang="it" href="https://gavin262.github.io/syrebo-clinical-column/it/sup07.html">
+<link rel="alternate" hreflang="ko" href="https://gavin262.github.io/syrebo-clinical-column/ko/sup07.html">
+<link rel="alternate" hreflang="lt" href="https://gavin262.github.io/syrebo-clinical-column/lt/sup07.html">
+<link rel="alternate" hreflang="nl" href="https://gavin262.github.io/syrebo-clinical-column/nl/sup07.html">
+<link rel="alternate" hreflang="pt" href="https://gavin262.github.io/syrebo-clinical-column/pt/sup07.html">
+<link rel="alternate" hreflang="ro" href="https://gavin262.github.io/syrebo-clinical-column/ro/sup07.html">
+<link rel="alternate" hreflang="ru" href="https://gavin262.github.io/syrebo-clinical-column/ru/sup07.html">
+<link rel="alternate" hreflang="th" href="https://gavin262.github.io/syrebo-clinical-column/th/sup07.html">
+<link rel="alternate" hreflang="tr" href="https://gavin262.github.io/syrebo-clinical-column/tr/sup07.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Pneumatski izvor bez elektronike: tlak, protok, temperatura i buka na ispitnom stolu","description":"Inženjerski rad ispituje pneumatski izvor za meke robote. Sažetak navodi mjerenja tlaka, protoka, temperature i buke na ispitnom stolu. To nisu klinički nalazi ni specifikacije proizvoda Syrebo.","inLanguage":"hr","url":"https://gavin262.github.io/syrebo-clinical-column/hr/sup07.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/logo_official.png","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","url":"https://doi.org/10.1177/21695172261442062","name":"Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.1177/21695172261442062","sameAs":"https://doi.org/10.1177/21695172261442062"}}
+</script>
+<!-- seo:end -->
+</head>
+<body>
+<div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="Syrebo"></a><div><div class="col">Syrebo rubrika o kliničkim istraživanjima</div><div class="sub">Pregledi istraživanja rehabilitacije robotskim rukavicama utemeljeni na dokazima</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
+<div class="nav"><a href="../index.html">Naslovnica rubrike</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="https://hr.syrebo.com/contact-us">Istraživanje</a></div>
+<div class="wrap">
+<div class="issue">Supplement 07</div>
+<h1 class="hr">Pneumatski izvor bez elektronike: tlak, protok, temperatura i buka na ispitnom stolu</h1>
+<section class="paper"><p class="pk">Iz rada</p><div class="pm"><p class="pt">Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots</p><p class="pa">Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim</p><p class="pv">Soft Robotics, OnlineFirst, 2026</p><p class="pi">DOI: 10.1177/21695172261442062</p><p class="pi"><a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">Pogledajte izvor</a></p><p class="pi">Na ovoj kartici rada nisu prikazane slike iz rada.</p></div></section>
+
+<p>Rad predlaže način opskrbe mekog robota plinom: povezanu endotermnu i egzotermnu reakciju bez elektroničkih dijelova, reguliranu pasivnim mehaničkim komponentama koje prate stanje sustava. Sažetak navodi stabilan izlazni tlak od 7 bar i protok od 6 L/min, vršnu temperaturu od 36°C i buku od 40 dBA. Predmet je izvor plina, a ne funkcija šake ni tvrdnja da je rehabilitacijski proizvod dokazano učinkovit. Javno dostupni sažetak pregledan za ovu rubriku ne navodi proizvod Syrebo; ostaje neprovjereno pokazuje li cijeli tekst određenu marku ili model.</p>
+<h2>Kontekst</h2>
+<p>Meka struktura kreće se kada ima plin. Veličina, toplina, buka i upravljačka elektronika pumpe ograničavaju prostor u koji se uređaj može smjestiti. Drugi način opskrbe plinom inženjersko je pitanje.</p>
+<p>Tlak i decibeli na ispitnom stolu opisuju uzorak izvora. Ponašanje cjelovitog uređaja dok ga osoba koristi zasebno je ispitivanje. Ova stranica prenosi navode o izvedbi iz sažetka i ne dodaje korake izrade.</p>
+<p>Meka struktura mijenja oblik kada ima plin. Veličina, toplina, buka i elektronika pumpe utječu na prostor potreban za uređaj. Drugi način opskrbe plinom govori o ponašanju uzorka na ispitnom stolu: tlaku, protoku, temperaturi i zvuku. Ne daje rezultat funkcije šake niti odgovara je li jedna sesija treninga bila sigurna.</p>
+<h2>Pregled istraživanja</h2>
+<p>Sažetak opisuje plin nastao reakcijom fosforne kiseline i cezijeva bikarbonata, uz povezane endotermne i egzotermne procese radi ograničavanja topline. Pasivni mehanički dijelovi reguliraju reakciju kako se stanje sustava mijenja. Nema elektroničkog upravljača. Mjere se izlaz, temperatura i buka. Ova stranica ne prikazuje fotografiju proizvoda.</p>
+<p>Sustav iz sažetka proizvodi plin iz fosforne kiseline i cezijeva bikarbonata, povezuje endotermne i egzotermne procese radi ograničavanja topline te koristi pasivne mehaničke dijelove koji prate stanje sustava. Nema elektroničkog upravljača. Mjerenja se odnose na uzorak izvora. Stranica ne dodaje korake izrade ni fotografiju proizvoda. Nije provjereno prikazuje li cijeli tekst imenovani rehabilitacijski uređaj.</p>
+<p class="scan"><span class="tag">Ustroj istraživanja</span></p>
+<p>Laboratorijsko istraživanje pneumatskog izvora. Javno dostupni sažetak pregledan za ovu rubriku ne opisuje pacijente, ishode funkcije šake ni terapijski program.</p>
+<p class="scan"><span class="tag">Uzorak i raspored</span></p>
+<p>Sažetak navodi mjerenja eksperimentalnog izvora, a ne ishode u skupini pacijenata.</p>
+<p class="scan"><span class="tag">Glavni nalazi</span></p>
+<p>Sažetak navodi stabilan tlak od 7 bar, protok od 6 L/min, vršnu temperaturu od 36°C i buku od 40 dBA. Ti brojevi opisuju ispitani izvor u uvjetima koje navode autori; nisu specifikacije proizvoda Syrebo. Nisu zaključak o kliničkoj sigurnosti ni promjeni funkcije šake.</p>
+<h2>Što ovo istraživanje donosi</h2>
+<p>U raspravi o mekoj rehabilitacijskoj opremi rad predstavlja ideju opskrbe koja nije konvencionalna pumpa. Povezanost s određenim proizvodom ovisi o tome pokazuje li ga cijeli tekst. Do tada je riječ o radu o izvoru plina, a ne specifikaciji proizvoda.</p>
+<p>U raspravi o opremi rad daje jednu inženjersku ideju opskrbe koja nije konvencionalna pumpa. Laboratorijska očitanja nisu obećanje kliničke sigurnosti ni promjena funkcije šake. Dok se veza s markom ne provjeri, ne ulaze u specifikaciju proizvoda.</p>
+<h2>Izvor</h2>
+<p class="limit"><span class="tag">Ograničenja</span> Laboratorijsko istraživanje bez zaključka o kliničkoj učinkovitosti. Iz izlaza uzorka ne može se zaključiti kako će se gotov uređaj ponašati u uporabi. Nije provjereno jesu li prikazani određena marka i model pa se veza s markom ne uspostavlja. Omjeri reakcije i koraci izrade nisu dodani.</p>
+<div class="source">Izvor: Ung Heo, Junhwan Choi, Sangjoon J. Kim, Jung Kim. Low-Heat and Near-Silent Pneumatic Source Driven by Integrated Endothermic–Exothermic Chemical Reactions for Soft Robots. Soft Robotics, OnlineFirst, 2026. DOI: <a href="https://doi.org/10.1177/21695172261442062" rel="noopener noreferrer">10.1177/21695172261442062</a>.</div>
+<h2>Povezani članci</h2>
+<ul class="related">
+<li><a href="sup06.html">Dodatak 06 · Izvedivost sučelja kod zdravih sudionika, a ne ishod liječenja</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>Pridružite se kliničkom istraživanju</h2><p>Ova je rubrika namijenjena rehabilitacijskim terapeutima, klinikama i bolničkim odjelima. Oni koji žele razgovarati o istraživačkom pitanju ili mogućoj kliničkoj istraživačkoj suradnji sa Syrebom mogu nam se javiti. Provedba istraživanja ovisi o etičkom pregledu i dogovoru između strana.</p><p>Rezultat u jednom radu nije dokaz učinka proizvoda, a ova stranica ne rangira druge marke.</p><p><a class="btn" href="https://hr.syrebo.com/contact-us">Kako sudjelovati</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Kontakt</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<div class="tip">Napomena: Ishodi rehabilitacije razlikuju se među osobama. Slijedite plan treninga koji vam je odredio liječnik ili terapeut.</div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Syrebo rubrika o kliničkim istraživanjima<br>Ovaj sadržaj temelji se na objavljenim istraživanjima, služi edukaciji o rehabilitaciji i ne predstavlja liječnički savjet.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Kontakt</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="https://hr.syrebo.com/contact-us">Klinička istraživanja</a></p></div>
+</div>
+</body>
+</html>

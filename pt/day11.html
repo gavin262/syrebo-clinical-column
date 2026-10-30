@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Robôs de dedos pensados para casa: uma nota de desenvolvimento no Journal of the Robotics Society of Japan</title>
-<meta name="description" content="Um artigo de 2023 do Journal of the Robotics Society of Japan discute robôs de dedos para uso domiciliário na hemiparesia e nomeia a Syrebo entre os poucos exemplos comercializados. Não é um ensaio clínico.">
+<meta name="description" content="Uma revisão de 2023 aborda robôs de reabilitação para uso em casa e menciona a Syrebo como exemplo; não é um ensaio clínico de um dispositivo Syrebo.">
 <meta name="keywords" content="robô de reabilitação domiciliar, robô de reabilitação de dedos, dispositivo de reabilitação para uso domiciliar">
 <style>
 /* column-shell */
@@ -67,13 +67,13 @@ ul.related li{margin:6px 0;line-height:1.6}
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Syrebo Clinical Research Column">
 <meta property="og:title" content="Robôs de dedos pensados para casa: uma nota de desenvolvimento no Journal of the Robotics Society of Japan">
-<meta property="og:description" content="Um artigo de 2023 do Journal of the Robotics Society of Japan discute robôs de dedos para uso domiciliário na hemiparesia e nomeia a Syrebo entre os poucos exemplos comercializados. Não é um ensaio clínico.">
+<meta property="og:description" content="Uma revisão de 2023 aborda robôs de reabilitação para uso em casa e menciona a Syrebo como exemplo; não é um ensaio clínico de um dispositivo Syrebo.">
 <meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/pt/day11.html">
 <meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg">
 <meta property="og:locale" content="pt">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Robôs de dedos pensados para casa: uma nota de desenvolvimento no Journal of the Robotics Society of Japan">
-<meta name="twitter:description" content="Um artigo de 2023 do Journal of the Robotics Society of Japan discute robôs de dedos para uso domiciliário na hemiparesia e nomeia a Syrebo entre os poucos exemplos comercializados. Não é um ensaio clínico.">
+<meta name="twitter:description" content="Uma revisão de 2023 aborda robôs de reabilitação para uso em casa e menciona a Syrebo como exemplo; não é um ensaio clínico de um dispositivo Syrebo.">
 <meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg">
 <link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/day11.html">
 <link rel="alternate" hreflang="es" href="https://gavin262.github.io/syrebo-clinical-column/es/day11.html">
@@ -93,41 +93,45 @@ ul.related li{margin:6px 0;line-height:1.6}
 <link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/day11.html">
 <link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/day11.html">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Robôs de dedos pensados para casa: uma nota de desenvolvimento no Journal of the Robotics Society of Japan","description":"Um artigo de 2023 do Journal of the Robotics Society of Japan discute robôs de dedos para uso domiciliário na hemiparesia e nomeia a Syrebo entre os poucos exemplos comercializados. Não é um ensaio clínico.","inLanguage":"pt","url":"https://gavin262.github.io/syrebo-clinical-column/pt/day11.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","url":"https://doi.org/10.7210/jrsj.41.331","name":"在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","sameAs":"https://doi.org/10.7210/jrsj.41.331"}}
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Robôs de dedos pensados para casa: uma nota de desenvolvimento no Journal of the Robotics Society of Japan","description":"Uma revisão de 2023 aborda robôs de reabilitação para uso em casa e menciona a Syrebo como exemplo; não é um ensaio clínico de um dispositivo Syrebo.","inLanguage":"pt","url":"https://gavin262.github.io/syrebo-clinical-column/pt/day11.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","url":"https://doi.org/10.7210/jrsj.41.331","name":"在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","sameAs":"https://doi.org/10.7210/jrsj.41.331"}}
 </script>
 <!-- seo:end -->
 </head>
 <body>
 <div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="Syrebo"></a><div><div class="col">Coluna de pesquisa clínica Syrebo</div><div class="sub">Leituras baseadas em evidências sobre a reabilitação robótica da mão</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
-<div class="nav"><a href="index.html">Página inicial da coluna</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="../en/join.html">Pesquisa</a></div>
+<div class="nav"><a href="index.html">Página inicial da coluna</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="https://pt.syrebo.com/contact-us">Pesquisa</a></div>
 <div class="wrap">
 <div class="issue">Edição 11</div>
 <h1>Robôs de dedos pensados para casa: uma nota de desenvolvimento no Journal of the Robotics Society of Japan</h1>
-<section class="paper"><p class="pk">Do artigo</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4)</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">Ver a fonte</a></p></div></section>
+<section class="paper"><p class="pk">Do artigo</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4): 331–337</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">Ver a fonte</a></p></div></section>
 <img class="cover" src="../assets/day11_cover_en.jpg" alt="Capa">
-<img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma et al., Cureus 2024, figura 2: luva robótica macia Syrebo e consola (CC BY 4.0). Imagem desse relato de caso, não da revisão japonesa, que não mostra a luva.">
-<div class="cap">Sharma et al., Cureus 2024, figura 2: luva robótica macia Syrebo e consola (CC BY 4.0). Imagem desse relato de caso, não da revisão japonesa, que não mostra a luva. <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a></div>
-<p>A reabilitação da mão em casa é discutida há anos. Os exemplos comercializados na literatura da sociedade continuam a ser poucos. Em 2023 o Journal of the Robotics Society of Japan publicou um artigo de Furudate e colegas sobre um robô de reabilitação dos dedos pensado para o uso em casa após hemiparesia, e sobre desenvolvê-lo com clínicos. Os autores notam que os casos comercializados de uso em casa continuam raros, e nomeiam a luva de mão Syrebo como um desses casos. O artigo é uma nota de desenvolvimento e colaboração, não um ensaio de eficácia.</p>
+<img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma et al., Cureus 2024, figura 2: luva robótica macia Syrebo e consola (CC BY 4.0). Imagem desse relato de caso, não da revisão japonesa.">
+<div class="cap">Sharma et al., Cureus 2024, figura 2: luva robótica macia Syrebo e consola (CC BY 4.0). Imagem desse relato de caso, não da revisão japonesa. <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a></div>
+<p>A reabilitação da mão em casa é discutida há anos. Em 2023 o Journal of the Robotics Society of Japan publicou um artigo de Furudate e colegas sobre o desenvolvimento de robôs de reabilitação para casa com profissionais clínicos. Os autores mencionaram uma luva de mão Syrebo como exemplo comercialmente disponível na sua discussão sobre a reabilitação dos dedos. Esta é uma investigação relacionada, não um ensaio clínico de um dispositivo Syrebo.</p>
 <h2>Contexto</h2>
-<p>Entre a enfermaria e a casa estão o vestir o dispositivo, os limites de segurança e o uso quando não há terapeuta na sala. Os artigos de engenharia colocam essas restrições dentro do trabalho com clínicos. Ser nomeado significa que os autores escolheram este produto como exemplo. Não significa que a sociedade tenha feito um estudo controlado.</p>
-<p>«Poucos foram comercializados» é também um limite. Lê-lo como «a reabilitação em casa já está geralmente disponível» transforma um exemplo numa afirmação epidemiológica.</p>
+<p>Na passagem da enfermaria para casa, é preciso considerar como colocar o dispositivo, os limites de segurança e a utilização quando não há terapeuta presente. Os artigos de engenharia colocam essas restrições dentro do trabalho com clínicos. A menção significa que os autores escolheram este produto como exemplo. Não significa que a sociedade tenha feito um estudo controlado.</p>
+<p>A observação dos autores, em 2023, de que relativamente poucos dispositivos para uso em casa tinham chegado à utilização prática descreve o contexto daquela época; não determina a situação atual do mercado.</p>
 <h2>Visão geral do estudo</h2>
-<p>O artigo não imprime uma fotografia da luva. A imagem da luva e da consola nesta coluna é a figura 2 do caso da Cureus de 2024 de Sharma e colegas (CC BY 4.0). A legenda diz isso. Não é a figura original do artigo da sociedade japonesa.</p>
+<p>A imagem da luva e da consola nesta coluna é a figura 2 do relato de caso publicado por Sharma e colegas na Cureus em 2024 (CC BY 4.0). Não é uma figura da revisão japonesa.</p>
 <p class="scan"><span class="tag">Desenho do estudo</span></p>
-<p>Artigo de desenvolvimento numa revista de sociedade, sobre robôs de dedos para uso em casa e sobre o trabalho com clínicos. Não há randomização nem comparação funcional entre grupos.</p>
+<p>Esta revisão aborda o desenvolvimento de robôs de reabilitação com profissionais clínicos, incluindo o trabalho dos autores sobre reabilitação dos dedos e prevenção da fragilidade. Não descreve um ensaio clínico de um dispositivo Syrebo.</p>
 <p class="scan"><span class="tag">Amostra e esquema</span></p>
-<p>Não se aplica um tamanho de amostra clínico. O artigo discute um caminho para um produto, não resultados numa coorte.</p>
+<p>O artigo discute trabalhos de desenvolvimento e refere outras investigações; não apresenta uma amostra clínica de um ensaio de produto Syrebo.</p>
 <p class="scan"><span class="tag">Resultados principais</span></p>
-<p>O enunciado, tal como é usado aqui, é que os robôs de dedos comercializados orientados para casa continuam a ser poucos, e que a Syrebo é um exemplo que os autores nomeiam. A coluna mantém esse âmbito. Não é reescrito como eficácia, como um lugar de mercado ou como a promessa de que o treino em casa será concluído.</p>
+<p>Os autores observaram em 2023 que relativamente poucos produtos orientados para uso em casa tinham chegado à utilização prática e citaram uma luva Syrebo como exemplo. O seu artigo aborda o desenvolvimento de robôs de reabilitação; não estabelece a eficácia de um produto Syrebo.</p>
 <h2>O que o estudo acrescenta</h2>
-<p>O valor da nota é que o uso em casa é tratado como um problema de engenharia definido com clínicos. Um exemplo comercializado mostra que um dispositivo passou do protótipo ao produto.</p>
+<p>A revisão discute como os profissionais clínicos podem contribuir para o desenvolvimento de robôs de reabilitação para casa. Cita uma luva Syrebo como exemplo comercial e descreve separadamente os projetos dos próprios autores.</p>
 <p>Saber se pode ser usado de forma segura e repetida em casa continua a depender da indicação, da supervisão e de estudos clínicos separados. O artigo da sociedade não fornece esses dados.</p>
 <h2>Fonte</h2>
-<p class="limit"><span class="tag">Limites</span> Não é um ensaio clínico da Syrebo. A fonte sublinha que os exemplos comercializados continuam poucos. A fotografia vem de outro caso de acesso aberto.</p>
-<div class="source">Fonte: 古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4). DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
-<aside class="cta" id="join-research"><h2>Participar da pesquisa clínica</h2><p>Esta coluna dirige-se a terapeutas de reabilitação, clínicas e serviços hospitalares. É possível falar, por acordo escrito, de um equipamento de avaliação e de apoio para redigir os pontos de um protocolo. O início depende da revisão ética e do acordo entre as partes.</p><p>Uma pontuação publicada não é um efeito do produto, e esta página não compara outras marcas.</p><p><a class="btn" href="../en/join.html">Ler em inglês</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Contacto</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<p class="limit"><span class="tag">Limites</span> Não é um ensaio clínico da Syrebo. Em 2023, os autores observaram que relativamente poucos produtos para uso em casa tinham chegado à utilização prática. A fotografia vem de outro relato de caso de acesso aberto.</p>
+<div class="source">Fonte: 古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4):331–337. DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
+<h2>Leituras relacionadas</h2>
+<ul class="related">
+<li><a href="day07.html">Reabilitação da mão após enfarte da artéria cerebral média: o caso de uma doente de 66 anos</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>Participar da pesquisa clínica</h2><p>Esta coluna dirige-se a terapeutas de reabilitação, profissionais clínicos, clínicas e serviços hospitalares. Quem quiser discutir uma questão de investigação ou uma possível colaboração clínica com a Syrebo pode contactar-nos. A realização de um estudo depende da avaliação ética adequada e de um acordo entre as partes.</p><p>Uma pontuação publicada não é um efeito do produto, e esta página não compara outras marcas.</p><p><a class="btn" href="https://pt.syrebo.com/contact-us">Entre em contato para conversar sobre pesquisa</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Contacto</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">Nota: os resultados da reabilitação variam de pessoa para pessoa. Siga o plano de treino prescrito pelo seu médico ou terapeuta.</div>
-<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Coluna de pesquisa clínica Syrebo<br>O conteúdo deste artigo baseia-se em pesquisas publicadas e se destina apenas a informações sobre reabilitação; não constitui aconselhamento médico.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Contacto</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="../en/join.html">Pesquisa clínica</a></p></div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Coluna de pesquisa clínica Syrebo<br>O conteúdo deste artigo baseia-se em pesquisas publicadas e se destina apenas a informações sobre reabilitação; não constitui aconselhamento médico.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Contacto</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="https://pt.syrebo.com/contact-us">Pesquisa clínica</a></p></div>
 </div>
 </body>
 </html>

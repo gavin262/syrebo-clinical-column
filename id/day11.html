@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Robot jari yang ditujukan untuk rumah: catatan pengembangan di Journal of the Robotics Society of Japan</title>
-<meta name="description" content="Artikel 2023 di Journal of the Robotics Society of Japan membahas robot jari untuk pemakaian di rumah pada hemiparesis dan menyebut Syrebo di antara sedikit contoh yang dikomersialkan. Bukan uji klinis.">
+<meta name="description" content="Tinjauan tahun 2023 membahas robot rehabilitasi untuk digunakan di rumah dan menyebut Syrebo sebagai contoh; ini bukan uji klinis perangkat Syrebo.">
 <meta name="keywords" content="robot rehabilitasi di rumah, robot rehabilitasi jari, perangkat rehabilitasi untuk pemakaian di rumah">
 <style>
 /* column-shell */
@@ -67,13 +67,13 @@ ul.related li{margin:6px 0;line-height:1.6}
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Syrebo Clinical Research Column">
 <meta property="og:title" content="Robot jari yang ditujukan untuk rumah: catatan pengembangan di Journal of the Robotics Society of Japan">
-<meta property="og:description" content="Artikel 2023 di Journal of the Robotics Society of Japan membahas robot jari untuk pemakaian di rumah pada hemiparesis dan menyebut Syrebo di antara sedikit contoh yang dikomersialkan. Bukan uji klinis.">
+<meta property="og:description" content="Tinjauan tahun 2023 membahas robot rehabilitasi untuk digunakan di rumah dan menyebut Syrebo sebagai contoh; ini bukan uji klinis perangkat Syrebo.">
 <meta property="og:url" content="https://gavin262.github.io/syrebo-clinical-column/id/day11.html">
 <meta property="og:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg">
 <meta property="og:locale" content="id">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Robot jari yang ditujukan untuk rumah: catatan pengembangan di Journal of the Robotics Society of Japan">
-<meta name="twitter:description" content="Artikel 2023 di Journal of the Robotics Society of Japan membahas robot jari untuk pemakaian di rumah pada hemiparesis dan menyebut Syrebo di antara sedikit contoh yang dikomersialkan. Bukan uji klinis.">
+<meta name="twitter:description" content="Tinjauan tahun 2023 membahas robot rehabilitasi untuk digunakan di rumah dan menyebut Syrebo sebagai contoh; ini bukan uji klinis perangkat Syrebo.">
 <meta name="twitter:image" content="https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg">
 <link rel="alternate" hreflang="en" href="https://gavin262.github.io/syrebo-clinical-column/en/day11.html">
 <link rel="alternate" hreflang="es" href="https://gavin262.github.io/syrebo-clinical-column/es/day11.html">
@@ -93,41 +93,45 @@ ul.related li{margin:6px 0;line-height:1.6}
 <link rel="alternate" hreflang="zh-CN" href="https://gavin262.github.io/syrebo-clinical-column/zh/day11.html">
 <link rel="alternate" hreflang="x-default" href="https://gavin262.github.io/syrebo-clinical-column/en/day11.html">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Robot jari yang ditujukan untuk rumah: catatan pengembangan di Journal of the Robotics Society of Japan","description":"Artikel 2023 di Journal of the Robotics Society of Japan membahas robot jari untuk pemakaian di rumah pada hemiparesis dan menyebut Syrebo di antara sedikit contoh yang dikomersialkan. Bukan uji klinis.","inLanguage":"id","url":"https://gavin262.github.io/syrebo-clinical-column/id/day11.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","url":"https://doi.org/10.7210/jrsj.41.331","name":"在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","sameAs":"https://doi.org/10.7210/jrsj.41.331"}}
+{"@context":"https://schema.org","@type":"MedicalWebPage","headline":"Robot jari yang ditujukan untuk rumah: catatan pengembangan di Journal of the Robotics Society of Japan","description":"Tinjauan tahun 2023 membahas robot rehabilitasi untuk digunakan di rumah dan menyebut Syrebo sebagai contoh; ini bukan uji klinis perangkat Syrebo.","inLanguage":"id","url":"https://gavin262.github.io/syrebo-clinical-column/id/day11.html","image":"https://gavin262.github.io/syrebo-clinical-column/assets/day11_cover_en.jpg","isBasedOn":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","url":"https://doi.org/10.7210/jrsj.41.331","name":"在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発"},"publisher":{"@type":"Organization","name":"Syrebo","url":"https://www.syrebo.com/","email":"info@syrebo.com"},"about":{"@type":"ScholarlyArticle","identifier":"10.7210/jrsj.41.331","sameAs":"https://doi.org/10.7210/jrsj.41.331"}}
 </script>
 <!-- seo:end -->
 </head>
 <body>
 <div class="header"><a class="brand" href="https://www.syrebo.com/" rel="noopener noreferrer"><img src="../assets/logo_official.png" alt="Syrebo"></a><div><div class="col">Kolom Riset Klinis Syrebo</div><div class="sub">Ulasan berbasis bukti tentang penelitian rehabilitasi robotik tangan</div></div><a class="official" href="https://www.syrebo.com/" rel="noopener noreferrer">syrebo.com</a></div>
-<div class="nav"><a href="index.html">Beranda kolom</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="../en/join.html">Riset</a></div>
+<div class="nav"><a href="index.html">Beranda kolom</a><a href="day01.html">01</a><a href="day02.html">02</a><a href="day03.html">03</a><a href="day04.html">04</a><a href="day05.html">05</a><a href="day06.html">06</a><a href="day07.html">07</a><a href="day08.html">08</a><a href="day09.html">09</a><a href="day10.html">10</a><a href="day11.html">11</a><a href="day12.html">12</a><a href="sup01.html">S01</a><a href="sup02.html">S02</a><a href="sup03.html">S03</a><a href="sup04.html">S04</a><a href="sup05.html">S05</a><a href="sup06.html">S06</a><a href="sup07.html">S07</a><a href="sup08.html">S08</a><a href="https://id.syrebo.com/contact-us">Riset</a></div>
 <div class="wrap">
 <div class="issue">Edisi 11</div>
 <h1>Robot jari yang ditujukan untuk rumah: catatan pengembangan di Journal of the Robotics Society of Japan</h1>
-<section class="paper"><p class="pk">Dari artikel</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4)</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">Lihat sumber</a></p></div></section>
+<section class="paper"><p class="pk">Dari artikel</p><div class="pm"><p class="pt">在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発</p><p class="pa">古館裕大、千葉馨、石田裕二、三上貞芳</p><p class="pv">日本ロボット学会誌, 2023; 41(4): 331–337</p><p class="pi">DOI: 10.7210/jrsj.41.331</p><p class="pi"><a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">Lihat sumber</a></p></div></section>
 <img class="cover" src="../assets/day11_cover_en.jpg" alt="Sampul">
-<img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma dkk., Cureus 2024, Gambar 2: sarung tangan robotik lunak Syrebo dan konsol (CC BY 4.0). Dari laporan kasus itu, bukan dari tinjauan Jepang, yang tidak menampilkan sarung tangan.">
-<div class="cap">Sharma dkk., Cureus 2024, Gambar 2: sarung tangan robotik lunak Syrebo dan konsol (CC BY 4.0). Dari laporan kasus itu, bukan dari tinjauan Jepang, yang tidak menampilkan sarung tangan. <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a></div>
-<p>Rehabilitasi tangan di rumah telah dibahas bertahun-tahun. Contoh yang dikomersialkan dalam literatur perkumpulan masih sedikit. Pada 2023 Journal of the Robotics Society of Japan menerbitkan artikel Furudate dan rekan tentang robot rehabilitasi jari yang ditujukan untuk pemakaian di rumah setelah hemiparesis, dan tentang mengembangkannya bersama klinisi. Para penulis mencatat bahwa kasus pemakaian di rumah yang dikomersialkan tetap jarang, dan mereka menyebut sarung tangan Syrebo sebagai salah satu kasus itu. Artikel ini catatan pengembangan dan kolaborasi, bukan uji khasiat.</p>
+<img class="product" src="../assets/day11_sharma2024_fig2.jpg" alt="Sharma dkk., Cureus 2024, Gambar 2: sarung tangan robotik lunak Syrebo dan konsol (CC BY 4.0). Dari laporan kasus itu, bukan gambar dari tinjauan Jepang.">
+<div class="cap">Sharma dkk., Cureus 2024, Gambar 2: sarung tangan robotik lunak Syrebo dan konsol (CC BY 4.0). Dari laporan kasus itu, bukan gambar dari tinjauan Jepang. <a href="https://doi.org/10.7759/cureus.59314" rel="noopener noreferrer">10.7759/cureus.59314</a></div>
+<p>Rehabilitasi tangan di rumah telah dibahas bertahun-tahun. Pada 2023 Journal of the Robotics Society of Japan menerbitkan artikel Furudate dan rekan tentang pengembangan robot rehabilitasi untuk rumah bersama klinisi. Para penulis menyebut sarung tangan Syrebo sebagai salah satu contoh yang tersedia secara komersial dalam pembahasan rehabilitasi jari. Ini penelitian terkait, bukan uji klinis perangkat Syrebo.</p>
 <h2>Latar belakang</h2>
-<p>Di antara bangsal dan rumah terdapat cara memakai, batas keamanan, dan pemakaian ketika tidak ada terapis di ruangan. Artikel rekayasa menempatkan batasan itu di dalam kerja bersama klinisi. Disebut berarti para penulis memilih produk ini sebagai contoh. Bukan berarti perkumpulan menjalankan studi terkontrol.</p>
-<p>«Sedikit yang dikomersialkan» juga sebuah batas. Membacanya sebagai «rehabilitasi di rumah sudah tersedia secara umum» mengubah contoh menjadi klaim epidemiologis.</p>
+<p>Peralihan dari perawatan di rumah sakit ke rumah perlu mempertimbangkan cara memakai alat, batas keamanan, dan penggunaan saat tidak ada terapis di ruangan. Artikel rekayasa menempatkan batasan itu di dalam kerja bersama klinisi. Penyebutan ini berarti para penulis memilih produk sebagai contoh. Bukan berarti perkumpulan menjalankan studi terkontrol.</p>
+<p>Pengamatan penulis pada 2023 bahwa relatif sedikit perangkat untuk rumah yang telah mencapai penggunaan praktis menggambarkan konteks saat itu; pengamatan ini tidak menetapkan keadaan pasar saat ini.</p>
 <h2>Ikhtisar studi</h2>
-<p>Artikel tidak mencetak foto sarung tangan. Gambar sarung tangan dan konsol di rubrik ini adalah Gambar 2 laporan kasus Cureus 2024 oleh Sharma dan rekan (CC BY 4.0). Keterangan mengatakannya. Bukan gambar asli artikel perkumpulan Jepang.</p>
+<p>Gambar sarung tangan dan konsol di rubrik ini adalah Gambar 2 laporan kasus Cureus 2024 oleh Sharma dan rekan (CC BY 4.0). Gambar tersebut bukan gambar dari tinjauan Jepang.</p>
 <p class="scan"><span class="tag">Desain studi</span></p>
-<p>Artikel pengembangan di jurnal perkumpulan tentang robot jari untuk pemakaian di rumah dan tentang bekerja bersama klinisi. Tidak ada pengacakan dan tidak ada perbandingan fungsi antarkelompok.</p>
+<p>Tinjauan ini membahas pengembangan robot rehabilitasi bersama klinisi, termasuk pekerjaan penulis tentang rehabilitasi jari dan pencegahan sindrom kerapuhan. Tinjauan ini tidak menggambarkan uji klinis perangkat Syrebo.</p>
 <p class="scan"><span class="tag">Sampel dan jadwal</span></p>
-<p>Ukuran sampel klinis tidak berlaku. Artikel membahas jalan menuju produk, bukan luaran pada suatu kohort.</p>
+<p>Artikel membahas pekerjaan pengembangan dan merujuk penelitian lain; artikel tidak menyajikan sampel klinis untuk uji produk Syrebo.</p>
 <p class="scan"><span class="tag">Temuan utama</span></p>
-<p>Pernyataan, sebagaimana dipakai di sini, adalah bahwa robot jari yang dikomersialkan dan ditujukan ke rumah masih sedikit, dan bahwa Syrebo adalah satu contoh yang disebut para penulis. Rubrik menjaga lingkup itu. Tidak ditulis ulang sebagai khasiat, peringkat pasar, atau janji bahwa latihan di rumah akan diselesaikan.</p>
+<p>Pada 2023 penulis mengamati bahwa relatif sedikit produk untuk rumah yang mencapai penggunaan praktis dan menyebut sarung tangan Syrebo sebagai salah satu contoh. Artikel membahas pengembangan robot rehabilitasi; artikel tidak menetapkan khasiat produk Syrebo.</p>
 <h2>Apa yang ditambahkan studi ini</h2>
-<p>Nilai catatan ini adalah bahwa pemakaian di rumah diperlakukan sebagai masalah rekayasa yang ditetapkan bersama klinisi. Contoh yang dikomersialkan menunjukkan bahwa satu alat berpindah dari prototipe ke produk.</p>
-<p>Apakah alat itu dapat dipakai dengan aman dan berulang di rumah tetap bergantung pada indikasi, pengawasan, dan studi klinis yang terpisah. Artikel perkumpulan tidak menyediakan data itu.</p>
+<p>Tinjauan ini membahas bagaimana klinisi dapat membantu pengembangan robot rehabilitasi untuk rumah. Tinjauan menyebut sarung tangan Syrebo sebagai contoh komersial sambil menjelaskan proyek penulis sendiri secara terpisah.</p>
+<p>Apakah alat itu dapat dipakai dengan aman dan berulang di rumah tetap bergantung pada indikasi, pengawasan, dan studi klinis yang terpisah. Artikel tersebut tidak menyediakan data itu.</p>
 <h2>Sumber</h2>
-<p class="limit"><span class="tag">Batasan</span> Bukan uji klinis Syrebo. Sumber menekankan bahwa contoh yang dikomersialkan tetap sedikit. Foto berasal dari laporan kasus akses terbuka yang lain.</p>
-<div class="source">Sumber: 古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハビリロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4). DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
-<aside class="cta" id="join-research"><h2>Bergabung dalam penelitian klinis</h2><p>Kolom ini ditujukan kepada terapis rehabilitasi, klinik, dan bagian rumah sakit. Melalui perjanjian tertulis dapat dibahas perangkat evaluasi dan bantuan menyusun pokok protokol. Dimulainya penelitian bergantung pada tinjauan etik dan kesepakatan para pihak.</p><p>Skor yang diterbitkan bukan efek produk, dan halaman ini tidak membandingkan merek lain.</p><p><a class="btn" href="../en/join.html">Baca dalam bahasa Inggris</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Kontak</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
+<p class="limit"><span class="tag">Batasan</span> Bukan uji klinis Syrebo. Pada 2023 penulis mengamati bahwa relatif sedikit produk untuk rumah telah mencapai penggunaan praktis. Foto berasal dari laporan kasus akses terbuka yang lain.</p>
+<div class="source">Sumber: 古館裕大、千葉馨、石田裕二、三上貞芳. 在宅利用を想定した片麻痺手指リハロボットやフレイル予防ロボットにおける医療者との連携と開発. 日本ロボット学会誌, 2023;41(4):331–337. DOI: <a href="https://doi.org/10.7210/jrsj.41.331" rel="noopener noreferrer">10.7210/jrsj.41.331</a>.</div>
+<h2>Bacaan terkait</h2>
+<ul class="related">
+<li><a href="day07.html">Rehabilitasi tangan setelah infark arteri serebri media: laporan kasus seorang pasien berusia 66 tahun</a></li>
+</ul>
+<aside class="cta" id="join-research"><h2>Bergabung dalam penelitian klinis</h2><p>Kolom ini ditujukan kepada terapis rehabilitasi, klinisi, klinik, dan bagian rumah sakit. Jika Anda ingin membahas pertanyaan penelitian atau kemungkinan kolaborasi penelitian klinis dengan Syrebo, hubungi kami. Pelaksanaan penelitian bergantung pada peninjauan etik yang sesuai dan kesepakatan para pihak.</p><p>Skor yang diterbitkan bukan efek produk, dan halaman ini tidak membandingkan merek lain.</p><p><a class="btn" href="https://id.syrebo.com/contact-us">Hubungi kami untuk membahas penelitian</a><a class="btn btn-line" href="https://www.syrebo.com/contact-us">Kontak</a><a class="btn btn-line" href="mailto:info@syrebo.com">info@syrebo.com</a></p></aside>
 <div class="tip">Catatan: hasil rehabilitasi bervariasi pada setiap individu. Harap ikuti rencana latihan yang diresepkan oleh dokter atau terapis Anda.</div>
-<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Kolom Riset Klinis Syrebo<br>Konten ini disusun berdasarkan penelitian yang telah diterbitkan, hanya untuk referensi edukasi rehabilitasi, dan bukan merupakan saran medis.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Kontak</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="../en/join.html">Riset klinis</a></p></div>
+<div class="footer"><a href="https://www.syrebo.com/">syrebo.com</a> · Kolom Riset Klinis Syrebo<br>Konten ini disusun berdasarkan penelitian yang telah diterbitkan, hanya untuk referensi edukasi rehabilitasi, dan bukan merupakan saran medis.<p class="footlinks"><a href="https://www.syrebo.com/contact-us">Kontak</a> · <a href="mailto:info@syrebo.com">info@syrebo.com</a> · <a href="https://id.syrebo.com/contact-us">Riset klinis</a></p></div>
 </div>
 </body>
 </html>
